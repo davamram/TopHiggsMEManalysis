@@ -1,7 +1,7 @@
 # TopHiggsMEManalysis
 Tools designed to help MEMmultilepton analyses
 
-1) FlatTreeMEMproducer: produces MEM results provided an input as a flat tree
+1) FlatTreeMEMproducer: produces MEM results provided a flat tree as input
 
 2) SubGradientMinimizer: a custom minimizer, alternative to Minuit, designed to be a good local minimum finder for MEM kinematic fits problems
 
