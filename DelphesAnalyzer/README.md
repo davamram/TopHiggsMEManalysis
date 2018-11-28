@@ -1,11 +1,12 @@
+# DelphesAnalyzer
 
-# Set environment variables of Delphes and run the DelphesAnalyzer interactively
+#Set environment variables of Delphes and run the DelphesAnalyzer interactively
 
 source setup_Delphes.csh
 
 root -l run.C
 
-# If willing to run on batch, use instead:
+#If willing to run on batch, use instead:
 
 bsub -q 1nd RunDelphesAnalyzer
 
@@ -15,5 +16,5 @@ bsub -q 1nd RunDelphesAnalyzer
 
 root -l Skim.C
 
-# After skimming, the output is ready of MVA/DNN training
+#After skimming, the output is ready of MVA/DNN training
 
