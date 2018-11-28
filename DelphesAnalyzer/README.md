@@ -16,5 +16,5 @@ bsub -q 1nd RunDelphesAnalyzer
 
 root -l Skim.C
 
-#After skimming, the output is ready of MVA/DNN training
+#After skimming, the output is ready for MVA/DNN training
 
