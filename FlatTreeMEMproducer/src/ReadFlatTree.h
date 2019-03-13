@@ -109,8 +109,8 @@ class ReadFlatTree {
   //THQ2016 BDT input variables
   Float_t nJet25, maxEtaJet25, lepCharge, nJetEta1, dEtaFwdJetBJet, dEtaFwdJet2BJet, dEtaFwdJetClosestLep, dPhiHighestPtSSPair, minDRll, Lep3Pt;
   //THQ2016 additional variables
-  Float_t channel, weightfake, weightflip, event_id, event_run, inv_mll, hardestBjetPt, hardestBjetEta, fwdJetPt, lep1Pt, lep2Pt, lep3Pt, MET, nLooseBJets, nMediumBJets, nLightJets, nTightLep, nFakeableLep, nLightJets_Fwd40;
-
+  Float_t channel, weightfake, weightflip, event_run, inv_mll, hardestBjetPt, hardestBjetEta, fwdJetPt, lep1Pt, lep2Pt, lep3Pt, MET, nLooseBJets, nMediumBJets, nLightJets, nTightLep, nFakeableLep, nLightJets_Fwd40;
+ Int_t event_id;
 
 
   std::vector<double>* mc_kin_tthfl_inputvars;
@@ -353,7 +353,7 @@ class ReadFlatTree {
 
   Int_t mc_3l_category;
 
-  Int_t mc_ttZhypAllowed;
+  Char_t mc_ttZhypAllowed;
   Int_t mc_hasLLcombZpeak;
   Int_t mc_passMllGt12;
   Int_t mc_passLepPresel;
@@ -425,7 +425,7 @@ class ReadFlatTree {
   Float_t multilepton_JetHighestPt1_2ndPair_JER_Up, multilepton_JetHighestPt2_2ndPair_JER_Up, multilepton_JetClosestMw1_2ndPair_JER_Up, multilepton_JetClosestMw2_2ndPair_JER_Up, multilepton_JetLowestMjj1_2ndPair_JER_Up, multilepton_JetLowestMjj2_2ndPair_JER_Up;
   Float_t multilepton_JetHighestPt1_2ndPair_JER_Down, multilepton_JetHighestPt2_2ndPair_JER_Down, multilepton_JetClosestMw1_2ndPair_JER_Down, multilepton_JetClosestMw2_2ndPair_JER_Down, multilepton_JetLowestMjj1_2ndPair_JER_Down, multilepton_JetLowestMjj2_2ndPair_JER_Down;
 
-  float nJets;
+  Int_t nJets;
   vector<Float_t>* JetsPt;
   vector<Float_t>* JetsEta;
   vector<Float_t>* JetsPhi;
