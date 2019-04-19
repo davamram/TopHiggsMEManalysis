@@ -1,1 +1,14 @@
-tHq /afs/cern.ch/user/n/ntonon/public/MEM_Implementation/CMSSW_8_0_20/src/IPHCNtuple/MEM/test/tHq.root
+tHq_2l root://eoscms//eos/cms/store/user/chanon/THQ/Ntuples_V3/2l/tHq.root
+ttW_2l root://eoscms//eos/cms/store/user/chanon/THQ/Ntuples_V3/2l/ttW_LO.root
+ttZ_2l root://eoscms//eos/cms/store/user/chanon/THQ/Ntuples_V3/2l/ttZ_LO.root
+ttbar_dilep_2l root://eoscms//eos/cms/store/user/chanon/THQ/Ntuples_V3/2l/TTbar_DiLep.root
+ttbar_semilep_2l root://eoscms//eos/cms/store/user/chanon/THQ/Ntuples_V3/2l/TTbar_SemiLep.root
+ttjet_dilep_2l root://eoscms//eos/cms/store/user/chanon/THQ/Ntuples_V3/2l/TTJets_DiLep_MLM.root
+ttjet_semilep_2l root://eoscms//eos/cms/store/user/chanon/THQ/Ntuples_V3/2l/TTJets_SemiLep_MLM.root
+tHq_3l root://eoscms//eos/cms/store/user/chanon/THQ/Ntuples_V3/3l/tHq.root
+ttW_3l root://eoscms//eos/cms/store/user/chanon/THQ/Ntuples_V3/3l/ttW_LO.root
+ttZ_3l root://eoscms//eos/cms/store/user/chanon/THQ/Ntuples_V3/3l/ttZ_LO.root
+ttbar_dilep_PSweight_3l root://eoscms//eos/cms/store/user/chanon/THQ/Ntuples_V3/3l/TTbar_DiLep_PSweights.root
+ttbar_dilep_3l root://eoscms//eos/cms/store/user/chanon/THQ/Ntuples_V3/3l/TTbar_DiLep.root
+ttjet_3l root://eoscms//eos/cms/store/user/chanon/THQ/Ntuples_V3/3l/TTJets.root
+ttjet_dilep_3l root://eoscms//eos/cms/store/user/chanon/THQ/Ntuples_V3/3l/TTJets_DiLep_MLM.root
