@@ -17,6 +17,6 @@ do
   nEntriesTot=$(( nEntriesTot + nEntries ));
   #echo nEntriesTot=$nEntriesTot
 
-done < $1
+done < FileList.txt
 
 echo nEntriesTot=$nEntriesTot

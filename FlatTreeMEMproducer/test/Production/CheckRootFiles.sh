@@ -1,13 +1,13 @@
 #!/bin/bash
 
 #Suffix of the subdirectory: jobs will be created in Jobs_${opt}, that should contain the config.cfg file 
-opt=thq_test
+opt=Training2land3l
 
 #nEv events are run per job. Recommended nEv=6. If running also TTWJJ hyp, use nEv=1 (very slow).
-nEv=20
+nEv=50
 
 #LSF queue
-queue=1nd
+queue=tomorrow
 
 minimumsize=5000
 
@@ -26,16 +26,26 @@ do
   nJobs=$(($nEntries / $nEv ))
 #  echo nEntries=$nEntries nJobs=$nJobs
 
-  for i in `seq 0 $nJobs` #$nJobs 
+  rm Jobs_${opt}/JobsList_${proc}.txt
+
+  for i in `seq 0 $nJobs` 
   do
-    #if [ ! -s Jobs_${opt}/output_${proc}_${opt}_${i}.root ] ; then rm -f Jobs_${opt}/output_${proc}_${opt}_${i}.root ; fi
-    actualsize=$(wc -c <"Jobs_${opt}/output_${proc}_${opt}_${i}.root") 
-    #echo Jobs_${opt}/output_${proc}_${opt}_${i}.root $actualsize
-    if [  $actualsize -le $minimumsize ] ; then rm Jobs_${opt}/output_${proc}_${opt}_${i}.root ; fi
-    if [ ! -e Jobs_${opt}/output_${proc}_${opt}_${i}.root ] ; then echo bsub -q ${queue} RunBatchMEM_${proc}_${i} ; fi
+    if [ -f Jobs_${opt}/output_${proc}_${opt}_${i}.root ]
+    then
+      actualsize=$(wc -c <"Jobs_${opt}/output_${proc}_${opt}_${i}.root")
+      if [  $actualsize -le $minimumsize ]
+      then 
+        #rm Jobs_${opt}/output_${proc}_${opt}_${i}.root
+        echo ${proc} Job ${i} returned corrupted output, added to Jobs_${opt}/JobsList_${proc}.txt
+        echo ${i} >> Jobs_${opt}/JobsList_${proc}.txt
+      fi
+    else 
+      echo ${proc} missing output for Job ${i}, added to Jobs_${opt}/JobsList_${proc}.txt
+      echo ${i} >> Jobs_${opt}/JobsList_${proc}.txt
+    fi
   done
 
-done < FileList.txt
+done < $1
 
 
 

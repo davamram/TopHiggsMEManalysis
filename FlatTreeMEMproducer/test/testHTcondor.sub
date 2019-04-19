@@ -1,0 +1,8 @@
+executable            = RunHTcondorMEM_test.csh
+arguments             = /afs/cern.ch/work/n/ntonon/public/ntuples/input_ntuples/tHq2017/3l/SR/tHq.root 10 /afs/cern.ch/work/c/chanon/CMSSW_10_2_0/src/TopHiggsMEManalysis/FlatTreeMEMproducer/test/Production/ProdTHQanalysis 3l_test tHq $(ProcId) 
+output                = /afs/cern.ch/work/c/chanon/CMSSW_10_2_0/src/TopHiggsMEManalysis/FlatTreeMEMproducer/test/Production/ProdTHQanalysis/Jobs_3l_test/job.$(ClusterId).$(ProcId).txt
+log                   = /afs/cern.ch/work/c/chanon/CMSSW_10_2_0/src/TopHiggsMEManalysis/FlatTreeMEMproducer/test/Production/ProdTHQanalysis/Jobs_3l_test/job.$(ClusterId).$(ProcId).log
+error	              = /afs/cern.ch/work/c/chanon/CMSSW_10_2_0/src/TopHiggsMEManalysis/FlatTreeMEMproducer/test/Production/ProdTHQanalysis/Jobs_3l_test/job.$(ClusterId).$(ProcId).err
+transfer_output_files   = ""
++JobFlavour            = "tomorrow"
+queue                  $(Njob)

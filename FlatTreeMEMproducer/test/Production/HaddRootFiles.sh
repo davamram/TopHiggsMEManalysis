@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Suffix of the subdirectory: jobs will be created in Jobs_${opt}, that should contain the config.cfg file 
-opt=thq_test
+opt=Training2land3l
 
 while read line
 do
@@ -24,4 +24,4 @@ do
 #    if [ ! -e Jobs_${opt}/output_${proc}_${opt}_${i}.root ] ; then echo bsub -q ${queue} RunBatchMEM_${proc}_${i} ; fi
 #  done
 
-done < FileList.txt
+done < $1

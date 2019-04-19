@@ -1,0 +1,8 @@
+executable            = RunHTcondorHaddRootfiles.bash
+arguments             = Training2land3l FileList_Training2lAnd3l_remain.txt $(ProcId)
+output                = /afs/cern.ch/work/c/chanon/CMSSW_10_2_0/src/TopHiggsMEManalysis/FlatTreeMEMproducer/test/Production/Jobs_Training2land3l/jobHaddRemain_PROC.$(ClusterId).$(ProcId).txt
+log                   = /afs/cern.ch/work/c/chanon/CMSSW_10_2_0/src/TopHiggsMEManalysis/FlatTreeMEMproducer/test/Production/Jobs_Training2land3l/jobHaddRemain_PROC.$(ClusterId).$(ProcId).log
+error	              = /afs/cern.ch/work/c/chanon/CMSSW_10_2_0/src/TopHiggsMEManalysis/FlatTreeMEMproducer/test/Production/Jobs_Training2land3l/jobHaddRemain_PROC.$(ClusterId).$(ProcId).err
+transfer_output_files   = ""
++JobFlavour            = "tomorrow"
+queue                  8

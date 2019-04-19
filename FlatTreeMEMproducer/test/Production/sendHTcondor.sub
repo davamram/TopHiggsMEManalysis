@@ -1,0 +1,8 @@
+executable            = RunHTcondorMEM.bash
+arguments             = INPUTFILE NEV OUTPUTDIR OPTION PROC $(ProcId) 
+output                = OUTPUTDIR/Jobs_OPTION/job_PROC.$(ClusterId).$(ProcId).txt
+log                   = OUTPUTDIR/Jobs_OPTION/job_PROC.$(ClusterId).$(ProcId).log
+error	              = OUTPUTDIR/Jobs_OPTION/job_PROC.$(ClusterId).$(ProcId).err
+transfer_output_files   = ""
++JobFlavour            = "QUEUE"
+queue                  NJOBS

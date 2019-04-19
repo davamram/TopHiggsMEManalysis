@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
   ReadFlatTree tree;
 
   int evMax = atoi(argv[3]);
-  cout << "Will run on "<<argv[1]<<" from event "<<argv[2]<<" to "<<evMax<<" with option "<< argv[4]<<" and jetUpdate "<< argv[6]<<endl;
+  cout << "Will run on "<<argv[1]<<" from event "<<argv[2]<<" to "<<evMax<<" with option "<< argv[4]<<", jetUpdate "<< argv[6]<<" and list of variables from "<<argv[7] <<endl;
 
   if (strcmp(argv[6],"0")==0) tree.SetUpdateAllJets(false);
   if (strcmp(argv[6],"1")==0) tree.SetUpdateAllJets(true);
@@ -122,7 +122,7 @@ int main(int argc, char *argv[])
     double xsTLLJ = hypIntegrator.meIntegrator->xsTLLJ * hypIntegrator.meIntegrator->brTopLep;
     //double xsWZJJ = hypIntegrator.meIntegrator->xsWZJJ ;
 
-    tree.InitializeMEMRun(InputFileName);
+    tree.InitializeMEMRun(InputFileName, string(argv[7]));
     if (atoi(argv[3])==-1 || evMax>tree.tInput->GetEntries()) evMax = tree.tInput->GetEntries();
 
 
@@ -239,11 +239,11 @@ int main(int argc, char *argv[])
       tree.multilepton_Lepton4_P4_Matched       = *tree.multilepton_Lepton4_P4_Matched_ptr;
 
       cout << "B"<<endl;
-
+/*
       tree.multilepton_h0_P4			= *tree.multilepton_h0_P4_ptr;
       tree.multilepton_t1_P4			= *tree.multilepton_t1_P4_ptr;
       tree.multilepton_t2_P4			= *tree.multilepton_t2_P4_ptr;
-
+*/
       tree.multilepton_JetHighestPt1_P4 = *tree.multilepton_JetHighestPt1_P4_ptr;
       tree.multilepton_JetHighestPt2_P4 = *tree.multilepton_JetHighestPt2_P4_ptr;
       tree.multilepton_JetClosestMw1_P4 = *tree.multilepton_JetClosestMw1_P4_ptr;
@@ -294,6 +294,9 @@ int main(int argc, char *argv[])
 	cout << "--- mET : "<<endl;
 	cout << "mET Px="<<tree.multilepton_mET.Px()<<" Py="<<tree.multilepton_mET.Py()<<endl;
 	cout << "sumET="<<tree.multilepton_sumET<<endl;
+        cout << "--- Lepton categories : "<<endl;
+	cout << "catJets="<<tree.catJets<<endl;
+	cout << "mc_ttZhypAllowed="<<tree.mc_ttZhypAllowed<<endl;
      }
 
       //cout << "C"<<endl;

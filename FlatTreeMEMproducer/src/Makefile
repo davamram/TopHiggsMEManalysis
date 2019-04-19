@@ -40,7 +40,7 @@ clean:
 	rm *.o
 	rm ../test/runMEM
 
-objects= runMEM.o
+objects= runMEM.o ReadFlatTree.o
 
 ../test/runMEM: $(objects) 
 	$(CXX) -o ../test/runMEM $(objects) ${LIBS}  $(CXXFLAGS)
@@ -48,5 +48,9 @@ objects= runMEM.o
 runMEM.o: runMEM.cpp 
 	$(CXX) ${LIBS} ${CXXFLAGS} -c runMEM.cpp
 
+ReadFlatTree.o: ReadFlatTree.cpp
+	$(CXX) ${LIBS} ${CXXFLAGS} -c ReadFlatTree.cpp
+#ConfigParser.o: src/ConfigParser.cpp
+#        $(CXX) ${LIBS} ${CXXFLAGS} -c src/ConfigParser.cpp
 
 

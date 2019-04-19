@@ -1,8 +1,8 @@
 #!/bin/bash
 
-eosdir="/store/user/chanon/TZQ/TestNtuplesV7_Syst"
+eosdir="/store/user/chanon/THQ/Ntuples_V3/2l"
 
-cmsLs ${eosdir} > l
+eos ls ${eosdir} > l
 
 for i in `cat l`
 do
