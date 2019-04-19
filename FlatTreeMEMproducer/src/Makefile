@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 #Madgraph definitions
-MADDIR=../../../MEMmultilepton/data/Madgraph
+MADDIR=../../../MEMmultilepton/src/Madgraph
 TTH_MADINCDIR=${MADDIR}/PROC_SA_CPP_sm_4/src
 THAD_MADINCDIR=${MADDIR}/PROC_SA_CPP_sm_DECAY_tbwjj/src
 ATHAD_MADINCDIR=${MADDIR}/PROC_SA_CPP_sm_DECAY_antitbwjj/src
