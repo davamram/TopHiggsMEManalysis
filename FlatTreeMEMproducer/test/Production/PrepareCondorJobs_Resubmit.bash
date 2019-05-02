@@ -4,7 +4,7 @@
 #Environment variables LHAPDF and MEMEXECDIR (containing the executable) must be set
 
 #Suffix of the subdirectory: jobs will be created in Jobs_${opt}, that should contain the config.cfg file and listVar.txt 
-opt=Training2land3l
+opt=Prod3l
 
 #nEv events are run per job. Recommended nEv=6. If running also TTWJJ hyp, use nEv=1 (very slow). Depends on process
 nEv=50
@@ -37,21 +37,19 @@ do
 
   nJobs=$(($nEntries / $nEv ))
   echo nEntries=$nEntries nJobs=$nJobs
+  #((nJobs++))
 
   #nJobsMax=$((20000/$nEv))
   #echo nJobsMax=$nJobsMax
 
-  cp sendHTcondor.sub Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
-  sed -i s,INPUTFILE,${inputfile},g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
-  sed -i s/NEV/${nEv}/g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
-  sed -i s,OUTPUTDIR,${PWD},g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
-  sed -i s/PROC/${proc}/g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
-  sed -i s/OPTION/${opt}/g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
-  sed -i s/QUEUE/${queue}/g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+#  cp sendHTcondor.sub Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+#  sed -i s,INPUTFILE,${inputfile},g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+#  sed -i s/NEV/${nEv}/g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+#  sed -i s,OUTPUTDIR,${PWD},g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+#  sed -i s/PROC/${proc}/g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+#  sed -i s/OPTION/${opt}/g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+#  sed -i s/QUEUE/${queue}/g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
 #  sed -i s/NJOBS/${nJobs}/g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
-
-  #rm Jobs_${opt}/SendAllJobs_resubmit.sh
-  echo condor_submit sendHTcondor_${proc}_resubmit.sub >> Jobs_${opt}/SendAllJobs_resubmit.sh
 
   rm Jobs_${opt}/JobsList_${proc}.txt
 
@@ -75,8 +73,19 @@ do
     fi
   done
 
-  sed -i s/NJOBS/${nJobsRedo}/g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+  if [ $nJobsRedo -ge 1 ]
+  then 
+    cp sendHTcondor.sub Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+    sed -i s,INPUTFILE,${inputfile},g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+    sed -i s/NEV/${nEv}/g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+    sed -i s,OUTPUTDIR,${PWD},g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+    sed -i s/PROC/${proc}/g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+    sed -i s/OPTION/${opt}/g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+    sed -i s/QUEUE/${queue}/g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+    sed -i s/NJOBS/${nJobsRedo}/g Jobs_${opt}/sendHTcondor_${proc}_resubmit.sub
+    echo condor_submit sendHTcondor_${proc}_resubmit.sub >> Jobs_${opt}/SendAllJobs_resubmit.sh
+  fi
 
 done < $1
 
-chmod +x Jobs_${opt}/SendAllJobs.sh
+chmod +x Jobs_${opt}/SendAllJobs_resubmit.sh

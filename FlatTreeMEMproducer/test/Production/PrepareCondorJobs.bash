@@ -4,7 +4,7 @@
 #Environment variables LHAPDF and MEMEXECDIR (containing the executable) must be set
 
 #Suffix of the subdirectory: jobs will be created in Jobs_${opt}, that should contain the config.cfg file and listVar.txt 
-opt=Training2land3l
+opt=Prod3l
 
 #nEv events are run per job. Recommended nEv=6. If running also TTWJJ hyp, use nEv=1 (very slow). Depends on process
 nEv=50
@@ -35,6 +35,7 @@ do
 
   nJobs=$(($nEntries / $nEv ))
   echo nEntries=$nEntries nJobs=$nJobs
+  ((nJobs++))
 
   #nJobsMax=$((20000/$nEv))
   #echo nJobsMax=$nJobsMax

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Suffix of the subdirectory: jobs will be created in Jobs_${opt}, that should contain the config.cfg file 
-opt=Training2land3l
+opt=Prod3l
 
 #nEv events are run per job. Recommended nEv=6. If running also TTWJJ hyp, use nEv=1 (very slow).
 nEv=50
@@ -24,6 +24,7 @@ do
 
   #nJobs=2000
   nJobs=$(($nEntries / $nEv ))
+  #((nJobs++))
 #  echo nEntries=$nEntries nJobs=$nJobs
 
   rm Jobs_${opt}/JobsList_${proc}.txt

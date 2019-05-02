@@ -1,8 +1,8 @@
 #!/bin/bash
 
-opt=test_tZqAllSamplesMoriondNew2_FakesNew2_minus
+opt=Prod3l
 
-eosdir="/store/user/chanon/TZQ/TestNtuplesV7_Syst_MEMoutput"
+eosdir="/eos/cms/store/user/chanon/THQ/Ntuples_V4/3l_MEMoutput"
 
 while read line
 do
@@ -13,7 +13,7 @@ do
 #  echo $proc $inputfile
 
   ls Jobs_${opt}/output_${proc}_${opt}_all.root
-  cmsStage Jobs_${opt}/output_${proc}_${opt}_all.root ${eosdir}/FCNCNTuple_${proc}_.root
-  echo ${eosdir}/FCNCNTuple_${proc}.root
+  eos cp Jobs_${opt}/output_${proc}_${opt}_all.root ${eosdir}/output_${proc}_${opt}_all.root
+  echo ${eosdir}/output_${proc}_${opt}_all.root
 
-done < FileList.txt
+done < $1 
