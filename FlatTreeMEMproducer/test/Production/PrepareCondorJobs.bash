@@ -35,7 +35,7 @@ do
 
   nJobs=$(($nEntries / $nEv ))
   echo nEntries=$nEntries nJobs=$nJobs
-  ((nJobs++))
+  #((nJobs++))
 
   #nJobsMax=$((20000/$nEv))
   #echo nJobsMax=$nJobsMax
@@ -47,7 +47,7 @@ do
   sed -i s/PROC/${proc}/g Jobs_${opt}/sendHTcondor_${proc}.sub
   sed -i s/OPTION/${opt}/g Jobs_${opt}/sendHTcondor_${proc}.sub
   sed -i s/QUEUE/${queue}/g Jobs_${opt}/sendHTcondor_${proc}.sub
-  sed -i s/NJOBS/${nJobs}/g Jobs_${opt}/sendHTcondor_${proc}.sub
+  #sed -i s/NJOBS/${nJobs}/g Jobs_${opt}/sendHTcondor_${proc}.sub
 
   #rm Jobs_${opt}/SendAllJobs.sh
   echo condor_submit sendHTcondor_${proc}.sub >> Jobs_${opt}/SendAllJobs.sh
@@ -59,6 +59,9 @@ do
   do
     echo ${i} >> Jobs_${opt}/JobsList_${proc}.txt
   done
+
+  ((nJobs++))
+  sed -i s/NJOBS/${nJobs}/g Jobs_${opt}/sendHTcondor_${proc}.sub
 
 done < $1
 
