@@ -435,7 +435,7 @@ void TestExRootAnalysis()
       //cout<<"ib1==-1"<<endl;
       //if (ib2==-1) continue;
 
-      if (vSelectedLeptons.size()!=4) continue; // ICI : Plus compliqué que ça, vraiment utile ? (plus bas)
+      if (vSelectedLeptons.size()!=4) continue;
       //165
       //cout<<"vSelectedLeptons.size()<3"<<endl;
       //if (vSelectedLeptons.at(0)->PT<25) continue;
