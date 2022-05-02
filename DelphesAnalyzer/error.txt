@@ -1,0 +1,57 @@
+Info in <TUnixSystem::ACLiC>: creating shared library /gridgroup/cms/amram/code/TopHiggsMEManalysis/DelphesAnalyzer/./TestExRootAnalysis_C.so
+In file included from /gridgroup/cms/amram/code/TopHiggsMEManalysis/DelphesAnalyzer/TestExRootAnalysis_C_ACLiC_dict.cxx:41:0:
+/gridgroup/cms/amram/code/TopHiggsMEManalysis/DelphesAnalyzer/./TestExRootAnalysis.C: In function 'void TestExRootAnalysis()':
+/gridgroup/cms/amram/code/TopHiggsMEManalysis/DelphesAnalyzer/./TestExRootAnalysis.C:479:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int ij=0; ij< MatchedBJets.size(); ij++){
+                                              ^
+/gridgroup/cms/amram/code/TopHiggsMEManalysis/DelphesAnalyzer/./TestExRootAnalysis.C:534:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int ij=0; ij< MatchedJets.size(); ij++){
+                                           ^
+/gridgroup/cms/amram/code/TopHiggsMEManalysis/DelphesAnalyzer/./TestExRootAnalysis.C:545:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int ij=0; ij< MatchedBJets.size(); ij++){
+                                            ^
+/gridgroup/cms/amram/code/TopHiggsMEManalysis/DelphesAnalyzer/./TestExRootAnalysis.C:559:49: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int in=0; in<vSelectedNeutrinos.size(); in++){
+                                                 ^
+/gridgroup/cms/amram/code/TopHiggsMEManalysis/DelphesAnalyzer/./TestExRootAnalysis.C:650:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (ij==ib1 || ij==ib2) continue;
+                 ^
+/gridgroup/cms/amram/code/TopHiggsMEManalysis/DelphesAnalyzer/./TestExRootAnalysis.C:650:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (ij==ib1 || ij==ib2) continue;
+                            ^
+/gridgroup/cms/amram/code/TopHiggsMEManalysis/DelphesAnalyzer/./TestExRootAnalysis.C:665:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (ik==ib1 || ik==ib2) continue;
+                     ^
+/gridgroup/cms/amram/code/TopHiggsMEManalysis/DelphesAnalyzer/./TestExRootAnalysis.C:665:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if (ik==ib1 || ik==ib2) continue;
+                                ^
+Error in <TBufferFile::WriteByteCount>: bytecount too large (more than 1073741822)
+Error in <TBufferFile::WriteByteCount>: bytecount too large (more than 1073741822)
+Fatal in <TBufferFile::AutoExpand>: Request to expand to a negative size, likely due to an integer overflow: 0x910fb00c for a max of 0x7ffffffe.
+aborting
+#0  0x00007fe51d30260c in waitpid () from /usr/lib64/libc.so.6
+#1  0x00007fe51d27ff62 in do_system () from /usr/lib64/libc.so.6
+#2  0x00007fe51e38adf4 in TUnixSystem::StackTrace() () from /group/cms/chanon/root/lib/libCore.so.6.18
+#3  0x00007fe51e27c411 in DefaultErrorHandler(int, bool, char const*, char const*) () from /group/cms/chanon/root/lib/libCore.so.6.18
+#4  0x00007fe51e27be82 in ErrorHandler () from /group/cms/chanon/root/lib/libCore.so.6.18
+#5  0x00007fe51e28e614 in TObject::Fatal(char const*, char const*, ...) const () from /group/cms/chanon/root/lib/libCore.so.6.18
+#6  0x00007fe51e2654a2 in TBuffer::AutoExpand(int) () from /group/cms/chanon/root/lib/libCore.so.6.18
+#7  0x00007fe51c115224 in TBufferFile::WriteFastArray(float const*, int) () from /group/cms/chanon/root/lib/libRIO.so
+#8  0x00007fe51e2e1814 in TArrayF::Streamer(TBuffer&) () from /group/cms/chanon/root/lib/libCore.so.6.18
+#9  0x00007fe51e36eb0b in TStreamerBase::WriteBuffer(TBuffer&, char*) () from /group/cms/chanon/root/lib/libCore.so.6.18
+#10 0x00007fe51c366ff2 in int TStreamerInfo::WriteBufferAux<char**>(TBuffer&, char** const&, TStreamerInfo::TCompInfo* const*, int, int, int, int, int) () from /group/cms/chanon/root/lib/libRIO.so
+#11 0x00007fe51c1bf20d in TStreamerInfoActions::GenericWriteAction(TBuffer&, void*, TStreamerInfoActions::TConfiguration const*) () from /group/cms/chanon/root/lib/libRIO.so
+#12 0x00007fe51c119355 in TBufferFile::ApplySequence(TStreamerInfoActions::TActionSequence const&, void*) () from /group/cms/chanon/root/lib/libRIO.so
+#13 0x00007fe51c1197fc in TBufferFile::WriteClassBuffer(TClass const*, void*) () from /group/cms/chanon/root/lib/libRIO.so
+#14 0x00007fe5112559cb in TH3F::Streamer(TBuffer&) () from /group/cms/chanon/root/lib/libHist.so.6.18
+#15 0x00007fe51c19f303 in TKey::TKey(TObject const*, char const*, int, TDirectory*) () from /group/cms/chanon/root/lib/libRIO.so
+#16 0x00007fe51c162315 in TFile::CreateKey(TDirectory*, TObject const*, char const*, int) () from /group/cms/chanon/root/lib/libRIO.so
+#17 0x00007fe51c1566fc in TDirectoryFile::WriteTObject(TObject const*, char const*, char const*, int) () from /group/cms/chanon/root/lib/libRIO.so
+#18 0x00007fe51e290741 in TObject::Write(char const*, int, int) const () from /group/cms/chanon/root/lib/libCore.so.6.18
+#19 0x00007fe50ba75e95 in TestExRootAnalysis() () from /gridgroup/cms/amram/code/TopHiggsMEManalysis/DelphesAnalyzer/TestExRootAnalysis_C.so
+#20 0x00007fe51e99f060 in ?? ()
+#21 0x000000000234d308 in ?? ()
+#22 0x0000000001f360b0 in ?? ()
+#23 0x00007fe519488b20 in ?? () from /group/cms/chanon/root/lib/libCling.so
+#24 0x00007ffd1bef8460 in ?? ()
+#25 0x0000000000000000 in ?? ()

@@ -1,0 +1,18 @@
+Selection lepton du W
+Parti hadronique-top a enlever dans gen
+Selection jet (25;2.4)
+Selection Lepton (15;2.4) -> On veut (40;2.4) & (10;2.4)
+Selection sur la charge -> Utile ? Changer en somme des charges ?
+
+
+
+selection partons matched jet deltaR<0.2 -> deltaR<0.4
+on cherche la M la plus porche de m(Z/W) et la plus petite M ?
+SFOS ?
+Coupure sur la largeur du Z/W ?
+Selection 3l_1/2b_0/1/2j utile ?
+Selection matchedBjet
+
+
+
+Error pour P4

@@ -45,36 +45,8 @@ void TestExRootAnalysis()
   // Create chain of root trees
   TChain chain("Delphes");
 
-  //First 100k
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v1/tag_1_delphes_events_0.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v1/tag_1_delphes_events_1.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v1/tag_1_delphes_events_2.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v1/tag_1_delphes_events_3.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v1/tag_1_delphes_events_4.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v1/tag_1_delphes_events_5.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v1/tag_1_delphes_events_6.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v1/tag_1_delphes_events_7.root");
-
-  //Next 375k
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_1_delphes_events_0.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_1_delphes_events_1.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_1_delphes_events_3.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_1_delphes_events_4.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_1_delphes_events_5.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_1_delphes_events_6.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_1_delphes_events_7.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_1_delphes_events_8.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_1_delphes_events_10.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_1_delphes_events_11.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_1_delphes_events_12.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_1_delphes_events_15.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_1_delphes_events_16.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_1_delphes_events_18.root");
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_1_delphes_events_19.root");
-  //Next 400k
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v2/tag_2_delphes_events.root");
-  //Next 400k
-  chain.Add("root://eoscms//eos/cms/store/user/chanon/TTH/Delphes/TTZ_v3/tag_3_delphes_events.root");
+  //First 1k
+  chain.Add("/gridgroup/cms/amram/Sm_delphes.root");
 
 
   // Create object of class ExRootTreeReader
@@ -111,7 +83,7 @@ void TestExRootAnalysis()
 
   MissingET * mET = NULL;
   ScalarHT * msumET = NULL;
- 
+
   bool doSelectOnlyBjets = true;
   int ib1=-1, ib2=-1;
   TLorentzVector Bjet1, Bjet2;
@@ -121,7 +93,8 @@ void TestExRootAnalysis()
 
   unsigned int nSelectedEventsTTZwithGen = 0;
   unsigned int nSelectedEventsTTZ = 0;
-  unsigned int nSelectedEvent = 0; 
+  unsigned int nSelectedEvent = 0;
+  unsigned int tstcount = 0;
 
   TFile* fOutput = new TFile("output.root","RECREATE");
   MultiLeptonTree tree;
@@ -132,7 +105,7 @@ void TestExRootAnalysis()
   bool storeGenLevel = true;
 
   //int NEND_bis = NEND;
-  //if (NEND > numberOfEntries) NEND_bis = numberOfEntries; 
+  //if (NEND > numberOfEntries) NEND_bis = numberOfEntries;
 
   // Loop over all events
   for(Int_t entry = 0; entry < numberOfEntries; ++entry) {
@@ -140,7 +113,7 @@ void TestExRootAnalysis()
     // Load selected branches with data from specified event
     treeReader->ReadEntry(entry);
     if (entry % 1000 == 0) cout << "Event "<<entry<<endl;
-    //cout << "Event "<<entry<<endl; 
+    //cout << "Event "<<entry<<endl;
 
     vSelectedJets.clear();
     vSelectedGenLeptons.clear();
@@ -267,10 +240,10 @@ void TestExRootAnalysis()
 	    int md2 = genmother->D2;
 	    GenParticle *genmomdaughter1 = (GenParticle*) branchGenParticle->At(md1);
 	    GenParticle *genmomdaughter2 = (GenParticle*) branchGenParticle->At(md2);
-	    //if (abs(genmomdaughter1->PID)==5) vSelectedBquark.push_back(genmomdaughter1); 
+	    //if (abs(genmomdaughter1->PID)==5) vSelectedBquark.push_back(genmomdaughter1);
 	    //else if (abs(genmomdaughter2->PID)==5) vSelectedBquark.push_back(genmomdaughter2);
 
-	   /* 
+	   /*
 	   GenParticle *gentmp = genparticle;
 	   int doSearchNeutrino = 1;
 	    while (doSearchNeutrino>=1){
@@ -290,7 +263,7 @@ void TestExRootAnalysis()
 	      }
 	      else doSearchNeutrino = 0;
 	    }
-	    */ 
+	    */
 	  }
 	}
       }
@@ -298,7 +271,7 @@ void TestExRootAnalysis()
     Ptot_P4.SetPxPyPzE(Ptot_Px, Ptot_Py, Ptot_Pz, Ptot_E);
     Ptot = sqrt(Ptot_Px*Ptot_Px+Ptot_Py*Ptot_Py);
     //cout << "Ptot="<<Ptot<<endl;
- 
+
     // If event contains at least 1 jet
     if(branchJet->GetEntries() > 0) {
 
@@ -312,7 +285,7 @@ void TestExRootAnalysis()
 
       ib1=-1, ib2=-1;
       selectBjets(vSelectedJets, "BtagHighestPt", &ib1, &ib2, doSelectOnlyBjets);
-      //cout << "ib1="<<ib1<< " ib2="<<ib2<<endl; 
+      //cout << "ib1="<<ib1<< " ib2="<<ib2<<endl;
 
     }
 
@@ -346,7 +319,7 @@ void TestExRootAnalysis()
     if (branchElectron->GetEntries() > 0) {
       for (int ie=0; ie<branchElectron->GetEntries(); ie++){
         Lepton * elec = new Lepton((Electron*)branchElectron->At(ie));//static_cast<Candidate*>( branchElectron->At(ie) );
-	if (elec->PT > 15 && fabs(elec->Eta)<2.4){
+	if (elec->PT > 10 && fabs(elec->Eta)<2.5){
 	  vSelectedLeptons.push_back(elec);
 	  //cout << "Selected Electron pT="<<elec->PT<<endl;
 	}
@@ -356,15 +329,17 @@ void TestExRootAnalysis()
     if (branchMuon->GetEntries() > 0) {
       for (int ie=0; ie<branchMuon->GetEntries(); ie++){
         Lepton * muon = new Lepton((Muon*)branchMuon->At(ie));//static_cast<Candidate*>( branchElectron->At(ie) );
-        if (muon->PT > 15 && fabs(muon->Eta)<2.4){
+        if (muon->PT > 10 && fabs(muon->Eta)<2.4){
           vSelectedLeptons.push_back(muon);
           //cout << "Selected Muon pT="<<muon->PT<<endl;
         }
       }
     }
 
+
     //cout << "Lepton size="<<vSelectedLeptons.size()<<endl;
     std::sort(vSelectedLeptons.begin(), vSelectedLeptons.end(), SortingLeptonPt);
+    if (vSelectedLeptons[0]->PT < 40) continue;
 
     if (branchMissingET->GetEntries() == 1){
         mET = (MissingET*) branchMissingET->At(0);
@@ -374,7 +349,7 @@ void TestExRootAnalysis()
 	msumET = (ScalarHT*) branchScalarHT->At(0);
     }
 
-    
+
     int tot_charge = 0;
     int tot_id = 0;
     if (vSelectedLeptons.size()>=4){
@@ -399,7 +374,7 @@ void TestExRootAnalysis()
             if ( fabs( ( P1 + P2).M() ) < 12 )
             { pass_invmasscut = false ;}
         }
-      } 
+      }
     }
 
     //SFOS pair
@@ -412,7 +387,7 @@ void TestExRootAnalysis()
         }
     }
 
-    //Z veto 
+    //Z veto
     bool pass_Zveto = true;
     if (vSelectedLeptons.size()>=2){
       for(unsigned int i=0; i<vSelectedLeptons.size()-1; i++)
@@ -450,49 +425,58 @@ void TestExRootAnalysis()
 
 
     if (doTTZselection){
+//931
 
       if (vSelectedJets.size()<2) continue;
+      //855
+      //cout<<"vSelectedJets.size()<2"<<endl;
       if (ib1==-1) continue;
+      //711
+      //cout<<"ib1==-1"<<endl;
       //if (ib2==-1) continue;
 
-      if (vSelectedLeptons.size()<3) continue;
+      if (vSelectedLeptons.size()!=4) continue; // ICI : Plus compliqué que ça, vraiment utile ? (plus bas)
+      //165
+      //cout<<"vSelectedLeptons.size()<3"<<endl;
       //if (vSelectedLeptons.at(0)->PT<25) continue;
 
       //if(!pass_invmasscut) continue;
 
       if (!isSFOS) continue;
+      //cout<<"!isSFOS"<<endl;
       tree.mc_ttZhypAllowed = 1;
 
       //if(pass_Zveto)       continue;
       tree.is_3l_TTZ_CR = true;
-
-      if (vSelectedLeptons.at(0)->Charge*vSelectedLeptons.at(1)->Charge>0 && vSelectedLeptons.at(1)->Charge*vSelectedLeptons.at(2)->Charge>0) continue;
 
       nSelectedEventsTTZ++;
 
       //if(vSelectedJets.size() < 4 && (met_ld < (0.2 + 0.1 * isSFOS)) ) continue;
 
       if(storeGenLevel){
-	
+
 	//if (MatchedJets.size()!=2) continue;
 	if (MatchedBJets.size()!=2) continue;
+  //cout<<"MatchedBJets"<<endl;
         //if (vSelectedJets.size()!=2) continue;
         //if (vSelectedBJets.size()!=2) continue;
         //if (vSelectedNeutrinos.size()>=1) continue;
-	if (vSelectedNeutrinosFromTopLep.size()!=1) continue;
-	if (vSelectedW.size()!=2) continue; 
+	if (vSelectedNeutrinosFromTopLep.size()!=2) continue; //Changement 1->2 car on veut 2 ?
+  //cout<<"vSelectedNetrinosFromTopLep"<<endl;
+	if (vSelectedW.size()!=2) continue;
+  //cout<<"vSelectedW"<<endl;
         /*
         for (int ij=0; ij< MatchedJets.size(); ij++){
           TLorentzVector Pjet; Pjet.SetPtEtaPhiM(MatchedJets.at(ij).first->PT, MatchedJets.at(ij).first->Eta, MatchedJets.at(ij).first->Phi, MatchedJets.at(ij).first->Mass);
           TLorentzVector Ppart; Ppart.SetPtEtaPhiM(MatchedJets.at(ij).second->PT, MatchedJets.at(ij).second->Eta, MatchedJets.at(ij).second->Phi, MatchedJets.at(ij).second->Mass);
 	  if (ij==0) {
             tree.multilepton_Jet1_DeltaR_Matched = Pjet.DeltaR(Ppart);
-            tree.multilepton_Jet1_Id_Matched = 0;   
+            tree.multilepton_Jet1_Id_Matched = 0;
             tree.multilepton_Jet1_P4_Matched = Ppart;
 	  }
           if (ij==1) {
             tree.multilepton_Jet2_DeltaR_Matched = Pjet.DeltaR(Ppart);
-            tree.multilepton_Jet2_Id_Matched = 0;   
+            tree.multilepton_Jet2_Id_Matched = 0;
             tree.multilepton_Jet2_P4_Matched = Ppart;
           }
         }
@@ -501,9 +485,9 @@ void TestExRootAnalysis()
           TLorentzVector Pjet; Pjet.SetPtEtaPhiM(MatchedBJets.at(ij).first->PT, MatchedBJets.at(ij).first->Eta, MatchedBJets.at(ij).first->Phi, MatchedBJets.at(ij).first->Mass);
           TLorentzVector Ppart; Ppart.SetPtEtaPhiM(MatchedBJets.at(ij).second->PT, MatchedBJets.at(ij).second->Eta, MatchedBJets.at(ij).second->Phi, MatchedBJets.at(ij).second->Mass);
 	  if (ij==iHadronicTop){
-            tree.multilepton_Bjet1_DeltaR_Matched = Pjet.DeltaR(Ppart); 
-            tree.multilepton_Bjet1_Id_Matched = 5;       
-            tree.multilepton_Bjet1_P4_Matched = Ppart;       
+            tree.multilepton_Bjet1_DeltaR_Matched = Pjet.DeltaR(Ppart);
+            tree.multilepton_Bjet1_Id_Matched = 5;
+            tree.multilepton_Bjet1_P4_Matched = Ppart;
 	  }
           if (ij==iLeptonicTop){
             tree.multilepton_Bjet2_DeltaR_Matched = Pjet.DeltaR(Ppart);
@@ -521,13 +505,13 @@ void TestExRootAnalysis()
 	  tree.multilepton_mET_Matched = Pneutrino;
 	}
 
-	if (vSelectedW.size()>=2){
-	  TLorentzVector PW1; PW1.SetPtEtaPhiM(vSelectedW.at(iHadronicTop)->PT, vSelectedW.at(iHadronicTop)->Eta, vSelectedW.at(iHadronicTop)->Phi, vSelectedW.at(iHadronicTop)->Mass);
-          TLorentzVector PW2; PW2.SetPtEtaPhiM(vSelectedW.at(iLeptonicTop)->PT, vSelectedW.at(iLeptonicTop)->Eta, vSelectedW.at(iLeptonicTop)->Phi, vSelectedW.at(iLeptonicTop)->Mass); 
+	if (vSelectedW.size()==2){ // Is usefull ? See later
+	  TLorentzVector PW1; PW1.SetPtEtaPhiM(vSelectedW.at(0)->PT, vSelectedW.at(0)->Eta, vSelectedW.at(0)->Phi, vSelectedW.at(0)->Mass);
+          TLorentzVector PW2; PW2.SetPtEtaPhiM(vSelectedW.at(1)->PT, vSelectedW.at(1)->Eta, vSelectedW.at(1)->Phi, vSelectedW.at(1)->Mass);
 	  tree.multilepton_W1_P4_Matched = PW1;
           tree.multilepton_W2_P4_Matched = PW2;
 	}
-	
+
 	nSelectedEventsTTZwithGen++;
       }
     }
@@ -535,6 +519,7 @@ void TestExRootAnalysis()
     if (doTFselection){
 
       if (vSelectedJets.size()<1) continue;
+      //cout<<"vSelectedJets"<<endl;
       //TRefArray Constituents = vSelectedJets.at(0)->Constituents;
       //for (int i=0; i<Constituents.GetEntries(); i++) {
 	//cout << "Constituents "<<i<< " " <<Constituents.At(i)<<endl;
@@ -603,7 +588,8 @@ void TestExRootAnalysis()
     tree.Pdf_PtotM->Fill(Ptot_P4.M());
     tree.Pdf_PtotP4->Fill(Ptot_P4.Pt(), Ptot_P4.Eta(), Ptot_P4.M());
 
-  if (doTTZselection){ 
+  if (doTTZselection){
+    /*
     if (is3l && ib1!=-1 && ib2!=-1 && vSelectedJets.size()-2>=2) tree.catJets = kCat_3l_2b_2j;
     else if (is3l && ib1!=-1 && ib2==-1 && vSelectedJets.size()-1>=2) tree.catJets = kCat_3l_1b_2j;
     else if (is3l && ib1!=-1 && ib2!=-1 && vSelectedJets.size()-2==1) tree.catJets = kCat_3l_2b_1j;
@@ -611,7 +597,10 @@ void TestExRootAnalysis()
     else if (is3l && ib1!=-1 && ib2!=-1 && vSelectedJets.size()-2==0) tree.catJets = kCat_3l_2b_0j;
     else tree.catJets = -1;
 
+    cout<<"catJets Before"<<endl;
     if (tree.catJets != kCat_3l_2b_2j) continue;
+    cout<<"catJets Selection"<<endl;
+    */
 
     tree.multilepton_Lepton1_Id = -999;
     tree.multilepton_Lepton2_Id = -999;
@@ -631,16 +620,16 @@ void TestExRootAnalysis()
         tree.multilepton_Lepton3_Id = vSelectedLeptons.at(2)->Id;
     }
 
-    //if (vSelectedLeptons.size()>=4 && is4l)
-    //{
-    //    tree.multilepton_Lepton4_P4.SetPtEtaPhiM(vSelectedLeptons.at(3)->PT, vSelectedLeptons.at(3)->Eta, vSelectedLeptons.at(3)->Phi, 0);
-    //    tree.multilepton_Lepton4_Id = vSelectedLeptons.at(3)->Id;
-    //}
+    if (vSelectedLeptons.size()>=4)
+    {
+        tree.multilepton_Lepton4_P4.SetPtEtaPhiM(vSelectedLeptons.at(3)->PT, vSelectedLeptons.at(3)->Eta, vSelectedLeptons.at(3)->Phi, 0);
+        tree.multilepton_Lepton4_Id = vSelectedLeptons.at(3)->Id;
+    }
 
    tree.multilepton_Bjet1_Id = -999;
    tree.multilepton_Bjet2_Id = -999;
 
-   if (ib1!=-1) tree.FillJetInfoOutputTree(&tree.multilepton_Bjet1_Id, 5, &tree.multilepton_Bjet1_P4, vSelectedJets.at(ib1)); 
+   if (ib1!=-1) tree.FillJetInfoOutputTree(&tree.multilepton_Bjet1_Id, 5, &tree.multilepton_Bjet1_P4, vSelectedJets.at(ib1));
    if (ib2!=-1) tree.FillJetInfoOutputTree(&tree.multilepton_Bjet2_Id, 5, &tree.multilepton_Bjet2_P4, vSelectedJets.at(ib2));
 
     tree.multilepton_JetHighestPt1_Id = -999;
@@ -663,35 +652,38 @@ void TestExRootAnalysis()
     float diffmass_min = 10000, mass_min = 10000; int ik1=-1, ik2=-1, il1=-1, il2=-1;
     for (unsigned int ij=0; ij<vSelectedJets.size(); ij++){
         if (ij==ib1 || ij==ib2) continue;
+        //cout<<"ij==ib1||ij==ib2"<<endl;
         if (vSelectedJets.at(ij)->PT > pt_max ) {
             pt_max2 = pt_max;
             ij2 = ij1;
             pt_max = vSelectedJets.at(ij)->PT;
             ij1 = ij;
-        } 
+        }
         if (vSelectedJets.at(ij)->PT < pt_max && vSelectedJets.at(ij)->PT > pt_max2){
-            pt_max2 = vSelectedJets.at(ij)->PT; 
-            ij2 = ij; 
-        } 
+            pt_max2 = vSelectedJets.at(ij)->PT;
+            ij2 = ij;
+        }
         for (unsigned int ik=0; ik<vSelectedJets.size(); ik++){
             if (ik==ij) continue;
+            //cout<<"ik=ij"<<endl;
             if (ik==ib1 || ik==ib2) continue;
+            //cout<<"ik==ib1 || ik==ib2"<<endl;
             Pjet1.SetPtEtaPhiM(vSelectedJets.at(ij)->PT, vSelectedJets.at(ij)->Eta, vSelectedJets.at(ij)->Phi, vSelectedJets.at(ij)->Mass);
-            Pjet2.SetPtEtaPhiM(vSelectedJets.at(ik)->PT, vSelectedJets.at(ik)->Eta, vSelectedJets.at(ik)->Phi, vSelectedJets.at(ik)->Mass); 
+            Pjet2.SetPtEtaPhiM(vSelectedJets.at(ik)->PT, vSelectedJets.at(ik)->Eta, vSelectedJets.at(ik)->Phi, vSelectedJets.at(ik)->Mass);
             if (TMath::Abs((Pjet1+Pjet2).M()-80.419)<diffmass_min){
                 ik1=ij;
                 ik2=ik;
                 diffmass_min = TMath::Abs((Pjet1+Pjet2).M()-80.419);
-            } 
+            }
             if ((Pjet1+Pjet2).M()<mass_min){
                 il1=ij;
                 il2=ik;
                 mass_min = (Pjet1+Pjet2).M();
-            } 
-        } 
-    }  
+            }
+        }
+    }
 
-    if (ij1!=-1) tree.FillJetInfoOutputTree(&tree.multilepton_JetHighestPt1_Id, 1, &tree.multilepton_JetHighestPt1_P4, vSelectedJets.at(ij1)); 
+    if (ij1!=-1) tree.FillJetInfoOutputTree(&tree.multilepton_JetHighestPt1_Id, 1, &tree.multilepton_JetHighestPt1_P4, vSelectedJets.at(ij1));
     if (ij2!=-1) tree.FillJetInfoOutputTree(&tree.multilepton_JetHighestPt2_Id, 1, &tree.multilepton_JetHighestPt2_P4, vSelectedJets.at(ij2));
     if (ik1!=-1 && ik2!=-1){
       tree.FillJetInfoOutputTree(&tree.multilepton_JetClosestMw1_Id, 2, &tree.multilepton_JetClosestMw1_P4, vSelectedJets.at(ik1));
@@ -745,71 +737,88 @@ void TestExRootAnalysis()
     nSelectedEvent++;
 
   }
-  
+
   cout << "---RESULTS---"<<endl;
   cout << "nSelectedEvent="<<nSelectedEvent<<endl;
   cout << "nSelectedEventsTTZ="<<nSelectedEventsTTZ<<endl;
   cout << "nSelectedEventsTTZwithGen="<<nSelectedEventsTTZwithGen<<endl;
+  cout<<"tstcount : "<<tstcount<<endl;
 
    double a = 0;
    a  = tree.Pdf_Ptot->Integral();
    tree.Pdf_Ptot->Scale(1./a);
+   //cout<<__LINE__<<endl;
    tree.Pdf_Ptot->Write();
- 
+
    a  = tree.Pdf_PtotEta->Integral();
    tree.Pdf_PtotEta->Scale(1./a);
+   //cout<<__LINE__<<endl;
    tree.Pdf_PtotEta->Write();
 
    a  = tree.Pdf_PtotM->Integral();
    tree.Pdf_PtotM->Scale(1./a);
+   //cout<<__LINE__<<endl;
    tree.Pdf_PtotM->Write();
- 
+
    a  = tree.Pdf_PtotP4->Integral();
    tree.Pdf_PtotP4->Scale(1./a);
-   tree.Pdf_PtotP4->Write();
+
+   //cout<<__LINE__<<endl;
+   //tree.Pdf_PtotP4->Write(); // This one causes error "bytecount too large"
 
     for (int ieta=0; ieta<3; ieta++)  {
       for (int ienergy=0; ienergy<6; ienergy++) {
 	a = tree.TF_B[ieta][ienergy]->Integral();
 	if (a>0) tree.TF_B[ieta][ienergy]->Scale(1./a);
+
+  //cout<<__LINE__<<endl;
         tree.TF_B[ieta][ienergy]->Write();
 
 	a = tree.TF_nonB[ieta][ienergy]->Integral();
 	if (a>0) tree.TF_nonB[ieta][ienergy]->Scale(1./a);
+
+  //cout<<__LINE__<<endl;
         tree.TF_nonB[ieta][ienergy]->Write();
-	
+
 	a = tree.TFratio_B[ieta][ienergy]->Integral();
 	if (a>0) tree.TFratio_B[ieta][ienergy]->Scale(1./a);
+
+  //cout<<__LINE__<<endl;
         tree.TFratio_B[ieta][ienergy]->Write();
 
 	a = tree.TFratio_nonB[ieta][ienergy]->Integral();
 	if (a>0) tree.TFratio_nonB[ieta][ienergy]->Scale(1./a);
+
+  //cout<<__LINE__<<endl;
         tree.TFratio_nonB[ieta][ienergy]->Write();
       }
     }
     for (int imet=0; imet<6; imet++){
       a = tree.TF_mET_Px[imet]->Integral();
-      if (a>0) tree.TF_mET_Px[imet]->Scale(1./a); 
+      if (a>0) tree.TF_mET_Px[imet]->Scale(1./a);
+
+      //cout<<__LINE__<<endl;
       tree.TF_mET_Px[imet]->Write();
 
       a = tree.TF_mET_Py[imet]->Integral();
       if (a>0) tree.TF_mET_Py[imet]->Scale(1./a);
+
+      //cout<<__LINE__<<endl;
       tree.TF_mET_Py[imet]->Write();
 
       a = tree.TF_mET_Pt[imet]->Integral();
-      if (a>0) tree.TF_mET_Pt[imet]->Scale(1./a); 
+      if (a>0) tree.TF_mET_Pt[imet]->Scale(1./a);
+
+      //cout<<__LINE__<<endl;
       tree.TF_mET_Pt[imet]->Write();
 
       a = tree.TF_mET_Phi[imet]->Integral();
       if (a>0) tree.TF_mET_Phi[imet]->Scale(1./a);
+
+      //cout<<__LINE__<<endl;
       tree.TF_mET_Phi[imet]->Write();
     }
-
 
    tree.tOutput->Write();
    fOutput->Close();
 }
-
-
-
-
