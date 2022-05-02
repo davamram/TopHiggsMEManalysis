@@ -436,6 +436,7 @@ void TestExRootAnalysis()
       //if (ib2==-1) continue;
 
       if (vSelectedLeptons.size()!=4) continue;
+      tstcount++;
       //165
       //cout<<"vSelectedLeptons.size()<3"<<endl;
       //if (vSelectedLeptons.at(0)->PT<25) continue;
@@ -481,7 +482,7 @@ void TestExRootAnalysis()
           }
         }
         */
-        for (int ij=0; ij< MatchedBJets.size(); ij++){
+        for (int ij=0; ij< (int)MatchedBJets.size(); ij++){
           TLorentzVector Pjet; Pjet.SetPtEtaPhiM(MatchedBJets.at(ij).first->PT, MatchedBJets.at(ij).first->Eta, MatchedBJets.at(ij).first->Phi, MatchedBJets.at(ij).first->Mass);
           TLorentzVector Ppart; Ppart.SetPtEtaPhiM(MatchedBJets.at(ij).second->PT, MatchedBJets.at(ij).second->Eta, MatchedBJets.at(ij).second->Phi, MatchedBJets.at(ij).second->Mass);
 	  if (ij==iHadronicTop){
@@ -532,7 +533,7 @@ void TestExRootAnalysis()
       //}
 
       //Analyze matched jets TF
-      for (int ij=0; ij< MatchedJets.size(); ij++){
+      for (int ij=0; ij< (int)MatchedJets.size(); ij++){
         TLorentzVector Pjet; Pjet.SetPtEtaPhiM(MatchedJets.at(ij).first->PT, MatchedJets.at(ij).first->Eta, MatchedJets.at(ij).first->Phi, MatchedJets.at(ij).first->Mass);
         TLorentzVector Ppart; Ppart.SetPtEtaPhiM(MatchedJets.at(ij).second->PT, MatchedJets.at(ij).second->Eta, MatchedJets.at(ij).second->Phi, MatchedJets.at(ij).second->Mass);
 	double Erec = Pjet.E();
@@ -543,7 +544,7 @@ void TestExRootAnalysis()
 	int iEnergy = GetTransferFunctionEnergy(Pjet.E());
 	tree.TFratio_nonB[iEta][iEnergy]->Fill(Erec/Epart);
       }
-      for (int ij=0; ij< MatchedBJets.size(); ij++){
+      for (int ij=0; ij< (int)MatchedBJets.size(); ij++){
         TLorentzVector Pjet; Pjet.SetPtEtaPhiM(MatchedBJets.at(ij).first->PT, MatchedBJets.at(ij).first->Eta, MatchedBJets.at(ij).first->Phi, MatchedBJets.at(ij).first->Mass);
         TLorentzVector Ppart; Ppart.SetPtEtaPhiM(MatchedBJets.at(ij).second->PT, MatchedBJets.at(ij).second->Eta, MatchedBJets.at(ij).second->Phi, MatchedBJets.at(ij).second->Mass);
         double Erec = Pjet.E();
@@ -557,7 +558,7 @@ void TestExRootAnalysis()
 
       //Missing ET TF
       TLorentzVector GenNeutrinoSum; GenNeutrinoSum.SetPtEtaPhiM(0,0,0,0);
-      for (int in=0; in<vSelectedNeutrinos.size(); in++){
+      for (int in=0; in<(int)vSelectedNeutrinos.size(); in++){
 	TLorentzVector Pneutrino; Pneutrino.SetPtEtaPhiM(vSelectedNeutrinos.at(in)->PT, vSelectedNeutrinos.at(in)->Eta, vSelectedNeutrinos.at(in)->Phi, 0);
 	GenNeutrinoSum += Pneutrino;
       }
@@ -651,7 +652,7 @@ void TestExRootAnalysis()
     float pt_max=0, pt_max2=0; int ij1=-1, ij2=-1;
     float diffmass_min = 10000, mass_min = 10000; int ik1=-1, ik2=-1, il1=-1, il2=-1;
     for (unsigned int ij=0; ij<vSelectedJets.size(); ij++){
-        if (ij==ib1 || ij==ib2) continue;
+        if ((int)ij==ib1 || (int)ij==ib2) continue;
         //cout<<"ij==ib1||ij==ib2"<<endl;
         if (vSelectedJets.at(ij)->PT > pt_max ) {
             pt_max2 = pt_max;
@@ -666,7 +667,7 @@ void TestExRootAnalysis()
         for (unsigned int ik=0; ik<vSelectedJets.size(); ik++){
             if (ik==ij) continue;
             //cout<<"ik=ij"<<endl;
-            if (ik==ib1 || ik==ib2) continue;
+            if ((int)ik==ib1 || (int)ik==ib2) continue;
             //cout<<"ik==ib1 || ik==ib2"<<endl;
             Pjet1.SetPtEtaPhiM(vSelectedJets.at(ij)->PT, vSelectedJets.at(ij)->Eta, vSelectedJets.at(ij)->Phi, vSelectedJets.at(ij)->Mass);
             Pjet2.SetPtEtaPhiM(vSelectedJets.at(ik)->PT, vSelectedJets.at(ik)->Eta, vSelectedJets.at(ik)->Phi, vSelectedJets.at(ik)->Mass);

@@ -6,12 +6,14 @@ Selection sur la charge -> Utile ? Changer en somme des charges ? ::: Ne change 
 
 
 
-selection partons matched jet deltaR<0.2
+selection partons matched jet deltaR<0.2 + Selection matchedBjet
+
 on cherche la M la plus porche de m(Z/W) et la plus petite M ?
+
 SFOS ?
 Coupure sur la largeur du Z/W ?
 Selection 3l_1/2b_0/1/2j utile ?
-Selection matchedBjet
+
 
 
 
