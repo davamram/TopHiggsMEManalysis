@@ -168,7 +168,7 @@ void TestExRootAnalysis()
 	    iTop++;
 	  }
 	}
-
+/*
 	if (abs(genparticle->PID)<=4 && !foundHadronicTop){
 	  int m = genparticle->M1;
           GenParticle *genmother = (GenParticle*) branchGenParticle->At(m);
@@ -197,6 +197,7 @@ void TestExRootAnalysis()
             iTop++;
 	  }
 	}
+  */
 
 	if (genparticle->Status==23 || genparticle->Status==24) {
 	  if (abs(genparticle->PID)<=5) {
@@ -339,7 +340,6 @@ void TestExRootAnalysis()
 
     //cout << "Lepton size="<<vSelectedLeptons.size()<<endl;
     std::sort(vSelectedLeptons.begin(), vSelectedLeptons.end(), SortingLeptonPt);
-    if (vSelectedLeptons[0]->PT < 40) continue;
 
     if (branchMissingET->GetEntries() == 1){
         mET = (MissingET*) branchMissingET->At(0);
@@ -436,10 +436,10 @@ void TestExRootAnalysis()
       //if (ib2==-1) continue;
 
       if (vSelectedLeptons.size()!=4) continue;
-      tstcount++;
       //165
       //cout<<"vSelectedLeptons.size()<3"<<endl;
       //if (vSelectedLeptons.at(0)->PT<25) continue;
+      if (vSelectedLeptons.at(0)->PT < 40) continue;
 
       //if(!pass_invmasscut) continue;
 
@@ -458,6 +458,7 @@ void TestExRootAnalysis()
 
 	//if (MatchedJets.size()!=2) continue;
 	if (MatchedBJets.size()!=2) continue;
+  tstcount++;
   //cout<<"MatchedBJets"<<endl;
         //if (vSelectedJets.size()!=2) continue;
         //if (vSelectedBJets.size()!=2) continue;
@@ -485,12 +486,12 @@ void TestExRootAnalysis()
         for (int ij=0; ij< (int)MatchedBJets.size(); ij++){
           TLorentzVector Pjet; Pjet.SetPtEtaPhiM(MatchedBJets.at(ij).first->PT, MatchedBJets.at(ij).first->Eta, MatchedBJets.at(ij).first->Phi, MatchedBJets.at(ij).first->Mass);
           TLorentzVector Ppart; Ppart.SetPtEtaPhiM(MatchedBJets.at(ij).second->PT, MatchedBJets.at(ij).second->Eta, MatchedBJets.at(ij).second->Phi, MatchedBJets.at(ij).second->Mass);
-	  if (ij==iHadronicTop){
+	  if (ij==0){
             tree.multilepton_Bjet1_DeltaR_Matched = Pjet.DeltaR(Ppart);
             tree.multilepton_Bjet1_Id_Matched = 5;
             tree.multilepton_Bjet1_P4_Matched = Ppart;
 	  }
-          if (ij==iLeptonicTop){
+          else if (ij==1){
             tree.multilepton_Bjet2_DeltaR_Matched = Pjet.DeltaR(Ppart);
             tree.multilepton_Bjet2_Id_Matched = 5;
             tree.multilepton_Bjet2_P4_Matched = Ppart;
