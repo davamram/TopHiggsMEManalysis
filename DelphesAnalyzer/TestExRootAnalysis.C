@@ -275,7 +275,6 @@ void TestExRootAnalysis()
 
     // If event contains at least 1 jet
     if(branchJet->GetEntries() > 0) {
-
       for (int ij=0; ij<branchJet->GetEntries(); ij++){
 	Jet *jet = (Jet*) branchJet->At(ij);
 	if (jet->PT > 25 && fabs(jet->Eta)<2.4) {
@@ -316,7 +315,6 @@ void TestExRootAnalysis()
 
 
     //Selecting leptons
-
     if (branchElectron->GetEntries() > 0) {
       for (int ie=0; ie<branchElectron->GetEntries(); ie++){
         Lepton * elec = new Lepton((Electron*)branchElectron->At(ie));//static_cast<Candidate*>( branchElectron->At(ie) );
@@ -358,9 +356,10 @@ void TestExRootAnalysis()
         tot_id += vSelectedLeptons.at(i)->Id;
       }
     }
+    if (tot_charge) continue;
 
-    bool is3l = false;
-    if (vSelectedLeptons.size()==3) is3l = true;
+    bool is4l = false;
+    if (vSelectedLeptons.size()==4) is4l = true;
 
     //Mll > 12
     bool pass_invmasscut = true;
@@ -425,7 +424,7 @@ void TestExRootAnalysis()
 
 
     if (doTTZselection){
-//931
+    //931
 
       if (vSelectedJets.size()<2) continue;
       //855
@@ -434,7 +433,6 @@ void TestExRootAnalysis()
       //711
       //cout<<"ib1==-1"<<endl;
       //if (ib2==-1) continue;
-
       if (vSelectedLeptons.size()!=4) continue;
       //165
       //cout<<"vSelectedLeptons.size()<3"<<endl;
@@ -457,8 +455,7 @@ void TestExRootAnalysis()
       if(storeGenLevel){
 
 	//if (MatchedJets.size()!=2) continue;
-	if (MatchedBJets.size()!=2) continue;
-  tstcount++;
+	if (MatchedBJets.size()!=2) continue; //ICI : utile ou pas ?
   //cout<<"MatchedBJets"<<endl;
         //if (vSelectedJets.size()!=2) continue;
         //if (vSelectedBJets.size()!=2) continue;
@@ -591,19 +588,12 @@ void TestExRootAnalysis()
     tree.Pdf_PtotP4->Fill(Ptot_P4.Pt(), Ptot_P4.Eta(), Ptot_P4.M());
 
   if (doTTZselection){
-    /*
-    if (is3l && ib1!=-1 && ib2!=-1 && vSelectedJets.size()-2>=2) tree.catJets = kCat_3l_2b_2j;
-    else if (is3l && ib1!=-1 && ib2==-1 && vSelectedJets.size()-1>=2) tree.catJets = kCat_3l_1b_2j;
-    else if (is3l && ib1!=-1 && ib2!=-1 && vSelectedJets.size()-2==1) tree.catJets = kCat_3l_2b_1j;
-    else if (is3l && ib1!=-1 && ib2==-1 && vSelectedJets.size()-1==1) tree.catJets = kCat_3l_1b_1j;
-    else if (is3l && ib1!=-1 && ib2!=-1 && vSelectedJets.size()-2==0) tree.catJets = kCat_3l_2b_0j;
+    //cout<<"is4l : "<<is4l<<" / ib1 : "<<ib1<<" / ib2 : "<<ib2<<endl;
+    if (is4l && ib1!=-1 && ib2!=-1) tree.catJets = kCat_4l_2b;
+    else if (is4l && ib1!=-1 && ib2==-1) tree.catJets = kCat_4l_1b;
     else tree.catJets = -1;
 
-    cout<<"catJets Before"<<endl;
-    if (tree.catJets != kCat_3l_2b_2j) continue;
-    cout<<"catJets Selection"<<endl;
-    */
-
+    if (tree.catJets != kCat_4l_2b && tree.catJets != kCat_4l_1b) continue;
     tree.multilepton_Lepton1_Id = -999;
     tree.multilepton_Lepton2_Id = -999;
     tree.multilepton_Lepton3_Id = -999;
