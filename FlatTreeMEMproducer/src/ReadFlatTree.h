@@ -7,6 +7,7 @@
 #include "TBranch.h"
 #include "TTree.h"
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -455,7 +456,7 @@ class ReadFlatTree {
   Float_t multilepton_JetHighestPt1_2ndPair_JER_Up, multilepton_JetHighestPt2_2ndPair_JER_Up, multilepton_JetClosestMw1_2ndPair_JER_Up, multilepton_JetClosestMw2_2ndPair_JER_Up, multilepton_JetLowestMjj1_2ndPair_JER_Up, multilepton_JetLowestMjj2_2ndPair_JER_Up;
   Float_t multilepton_JetHighestPt1_2ndPair_JER_Down, multilepton_JetHighestPt2_2ndPair_JER_Down, multilepton_JetClosestMw1_2ndPair_JER_Down, multilepton_JetClosestMw2_2ndPair_JER_Down, multilepton_JetLowestMjj1_2ndPair_JER_Down, multilepton_JetLowestMjj2_2ndPair_JER_Down;
 
-  Float_t nJets;
+  Int_t nJets;
   vector<Float_t>* JetsPt;
   vector<Float_t>* JetsEta;
   vector<Float_t>* JetsPhi;
@@ -1120,4 +1121,3 @@ class ReadFlatTree {
 
 
 #endif
-

@@ -782,7 +782,7 @@ void ReadFlatTree::InitializeMEMRun(string InputFileName, string ListOfVars){
 
   tOutput->Branch("weight",&weight,"weight/F");
   tOutput->Branch("PV_weight",&PV_weight,"PV_weight/F");
- 
+
   tOutput->Branch("is_2lss_TTH_SR",&is_2lss_TTH_SR,"is_2lss_TTH_SR/B");
   tOutput->Branch("is_3l_TTH_SR",&is_3l_TTH_SR,"is_3l_TTH_SR/B");
 
@@ -1919,17 +1919,24 @@ void ReadFlatTree::ReadMultilepton(Long64_t iEvent, MultiLepton* multiLepton){
   (*multiLepton).JetsLowestMjj.clear();
   (*multiLepton).JetsHighestEta.clear();
 
+  cout<<"OK"<<endl;
+
   //if (multilepton_JetHighestPt1_Id!=-999) (*multiLepton).FillParticle("jetHighestPt", multilepton_JetHighestPt1_Id, *multilepton_JetHighestPt1_P4_ptr);
   if (multilepton_JetHighestPt1_Id!=-999) (*multiLepton).FillParticle("jetHighestPt", multilepton_JetHighestPt1_Id, multilepton_JetHighestPt1_CSV, multilepton_JetHighestPt1_JEC_Up, multilepton_JetHighestPt1_JEC_Down, multilepton_JetHighestPt1_JER_Up, multilepton_JetHighestPt1_JER_Down, *multilepton_JetHighestPt1_P4_ptr);
   //if (multilepton_JetHighestPt2_Id!=-999) (*multiLepton).FillParticle("jetHighestPt", multilepton_JetHighestPt2_Id, *multilepton_JetHighestPt2_P4_ptr);
+  cout<<__LINE__<<endl;
   if (multilepton_JetHighestPt2_Id!=-999) (*multiLepton).FillParticle("jetHighestPt", multilepton_JetHighestPt2_Id, multilepton_JetHighestPt2_CSV, multilepton_JetHighestPt2_JEC_Up, multilepton_JetHighestPt2_JEC_Down, multilepton_JetHighestPt2_JER_Up, multilepton_JetHighestPt2_JER_Down, *multilepton_JetHighestPt2_P4_ptr);
   //if (multilepton_JetClosestMw1_Id!=-999) (*multiLepton).FillParticle("jetClosestMw", multilepton_JetClosestMw1_Id, *multilepton_JetClosestMw1_P4_ptr);
+  cout<<__LINE__<<endl;
   if (multilepton_JetClosestMw1_Id!=-999) (*multiLepton).FillParticle("jetClosestMw", multilepton_JetClosestMw1_Id, multilepton_JetClosestMw1_CSV, multilepton_JetClosestMw1_JEC_Up, multilepton_JetClosestMw1_JEC_Down, multilepton_JetClosestMw1_JER_Up, multilepton_JetClosestMw1_JER_Down, *multilepton_JetClosestMw1_P4_ptr);
   //if (multilepton_JetClosestMw2_Id!=-999) (*multiLepton).FillParticle("jetClosestMw", multilepton_JetClosestMw2_Id, *multilepton_JetClosestMw2_P4_ptr);
+  cout<<__LINE__<<endl;
   if (multilepton_JetClosestMw2_Id!=-999) (*multiLepton).FillParticle("jetClosestMw", multilepton_JetClosestMw2_Id, multilepton_JetClosestMw2_CSV, multilepton_JetClosestMw2_JEC_Up, multilepton_JetClosestMw2_JEC_Down, multilepton_JetClosestMw2_JER_Up, multilepton_JetClosestMw2_JER_Down, *multilepton_JetClosestMw2_P4_ptr);
   //if (multilepton_JetLowestMjj1_Id!=-999) (*multiLepton).FillParticle("jetLowestMjj", multilepton_JetLowestMjj1_Id, *multilepton_JetLowestMjj1_P4_ptr);
+  cout<<__LINE__<<endl;
   if (multilepton_JetLowestMjj1_Id!=-999) (*multiLepton).FillParticle("jetLowestMjj", multilepton_JetLowestMjj1_Id, multilepton_JetLowestMjj1_CSV, multilepton_JetLowestMjj1_JEC_Up, multilepton_JetLowestMjj1_JEC_Down, multilepton_JetLowestMjj1_JER_Up, multilepton_JetLowestMjj1_JER_Down, *multilepton_JetLowestMjj1_P4_ptr);
   //if (multilepton_JetLowestMjj2_Id!=-999) (*multiLepton).FillParticle("jetLowestMjj", multilepton_JetLowestMjj2_Id, *multilepton_JetLowestMjj2_P4_ptr);
+  cout<<__LINE__<<endl;
   if (multilepton_JetLowestMjj2_Id!=-999) (*multiLepton).FillParticle("jetLowestMjj", multilepton_JetLowestMjj2_Id, multilepton_JetLowestMjj2_CSV, multilepton_JetLowestMjj2_JEC_Up, multilepton_JetLowestMjj2_JEC_Down, multilepton_JetLowestMjj2_JER_Up, multilepton_JetLowestMjj2_JER_Down, *multilepton_JetLowestMjj2_P4_ptr);
 	  if (multilepton_JetHighestEta1_Id!=-999) (*multiLepton).FillParticle("jetHighestEta", multilepton_JetHighestEta1_Id, multilepton_JetHighestEta1_CSV, multilepton_JetHighestEta1_JEC_Up, multilepton_JetHighestEta1_JEC_Down, multilepton_JetHighestEta1_JER_Up, multilepton_JetHighestEta1_JER_Down, *multilepton_JetHighestEta1_P4_ptr); //CHANGED -- added
   if (multilepton_JetHighestEta2_Id!=-999) (*multiLepton).FillParticle("jetHighestEta", multilepton_JetHighestEta2_Id, multilepton_JetHighestEta2_CSV, multilepton_JetHighestEta2_JEC_Up, multilepton_JetHighestEta2_JEC_Down, multilepton_JetHighestEta2_JER_Up, multilepton_JetHighestEta2_JER_Down, *multilepton_JetHighestEta2_P4_ptr); //CHANGED -- added
@@ -1956,13 +1963,25 @@ void ReadFlatTree::ReadMultilepton(Long64_t iEvent, MultiLepton* multiLepton){
   if (doUpdateAllJets) {
     cout << "nJets="<<nJets<<endl;
     TLorentzVector* P4jet = new TLorentzVector[(int)nJets];
+    cout<<"Test Print line : "<<__LINE__<<endl;
+    //P4jet[0]=multilepton_JetHighestPt1_P4;
+    //P4jet[1]=multilepton_JetHighestPt2_P4;
     for (int i=0; i<nJets; i++){
-      cout << "Jet "<<i<<": Pt="<<JetsPt->at(i)<<" Eta="<<JetsEta->at(i)<<" Phi="<<JetsPhi->at(i)<<" E="<<JetsE->at(i)<<" CSV="<<JetsCSV->at(i)<<endl;
+      cout<<"Test Print line : "<<__LINE__<<endl;
+      cout << "Jet "<<i<<": Pt="<<endl;
+      cout<<JetsPt->at(i)<<endl;
+      cout<<" Eta="<<JetsEta->at(i)<<endl;
+      cout<<" Phi="<<JetsPhi->at(i)<<endl;
+      cout<<" E="<<JetsE->at(i)<<endl;
+      cout<<" CSV="<<JetsCSV->at(i)<<endl;
+      cout<<"Test Print line : "<<__LINE__<<endl;
       P4jet[i].SetPtEtaPhiE(JetsPt->at(i), JetsEta->at(i), JetsPhi->at(i), JetsE->at(i));
+      cout<<"Test Print line : "<<__LINE__<<endl;
       (*multiLepton).FillParticle("alljet", 0, P4jet[i], JetsCSV->at(i));
+      cout<<"Test Print line : "<<__LINE__<<endl;
     }
   }
-  
+
 
 
   (*multiLepton).Ptot = *multilepton_Ptot_ptr;

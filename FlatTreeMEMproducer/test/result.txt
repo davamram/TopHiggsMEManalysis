@@ -1,0 +1,5673 @@
+Will run on input.root from event 0 to -1 with option --MEMRun, jetUpdate 0 and list of variables from varlist
+UpdateAllJets 0
+doTTLL= 1
+nPointsHypTTLL= 10000
+doTTHsl= 1
+nPointsHypTTHsl= 100000
+doTTHfl= 1
+nPointsHypTTHfl= 100000
+doTTW= 1
+nPointsHypTTW= 30000
+doTTWJJ= 0
+nPointsHypTTWJJ= 100000
+doTTbarfl= 1
+nPointsHypTTbarfl= 10000
+doTTbarsl= 1
+nPointsHypTTbarsl= 10000
+doTLLJ= 0
+nPointsHypTLLJ= 3000
+doWZJJ= 0
+nPointsHypWZJJ= 10000
+doTHJ= 1
+nPointsHypTHJ= 30000
+DoOptim= -1
+DoOptimTopHad= 1
+DoOptimTopLep= 1
+DoOptimHiggs= 2
+DoOptimW= 1
+DoMinimization= 0
+nJetSyst= 0
+JetTFfracmin= 0.2
+JetTFfracmax= 5.0
+NeutMaxE= 500.
+JetChoice= Mixed
+csvthresh= 0.1522
+Generator= 0
+MadgraphDir= /gridgroup/cms/amram/code/MEMmultilepton/src/Madgraph/
+ComEnergy= 13000
+Pdf= NNPDF30_lo_as_0118
+TF= /gridgroup/cms/amram/code/MEMmultilepton/data/output.root
+TFChoice= 4
+TFOption= 2
+Integration will use JetTFfracmin=0.2 JetTFfracmax=5 NeutMaxE=500
+Optimizing phase space with option: -1
+Optimizing phase space with option: TopHad 1, TopLep 1, Higgs 2, Woffshell 1
+In 2j categories, choose 2 jets with option Mixed
+Will run hyp TTLL code 15 with 10000 iterations
+Will run hyp TTHsl code 16 with 100000 iterations
+Will run hyp TTHfl code 14 with 100000 iterations
+Will run hyp TTW code 17 with 30000 iterations
+Will run hyp TTbarfl code 19 with 10000 iterations
+Will run hyp TTbarsl code 20 with 10000 iterations
+Will run hyp THJ code 23 with 30000 iterations
+Test MEM weight computation
+comEnergy=13000
+LHAPDF 6.2.3 loading /group/cms/chanon/LHAPDF-6.2.3-install/share/LHAPDF/NNPDF30_lo_as_0118/NNPDF30_lo_as_0118_0000.dat
+NNPDF30_lo_as_0118 PDF set, member #0, version 2; LHAPDF ID = 262000
+TTH Process nexternal=5
+TTLL Process nexternal=6
+TTWP cdbar Process nexternal=6
+TTWP udbar Process nexternal=6
+TTWP usbar Process nexternal=6
+TTWM dcbar Process nexternal=6
+TTWM dubar Process nexternal=6
+TTWM subar Process nexternal=6
+TTWPJJ Process nexternal=8
+TTWPJJ Process nexternal=8
+TTWPJJ Process nexternal=8
+TTWPJJ Process nexternal=8
+TTWPJJ Process nexternal=8
+TTWPJJ Process nexternal=8
+TTWMJJ Process nexternal=8
+TTWMJJ Process nexternal=8
+TTWMJJ Process nexternal=8
+TTWMJJ Process nexternal=8
+TTWMJJ Process nexternal=8
+TTWMJJ Process nexternal=8
+TTbar Process nexternal=4
+T->bWjj Process nexternal=4
+Anti T->bWjj Process nexternal=4
+H->WW->2l2nu Process nexternal=5
+TLLQ Process nexternal=6
+TLLQ Process nexternal=6
+TLLQ Process nexternal=6
+TLLQ Process nexternal=6
+WZJJ Process nexternal=8
+WZJJ Process nexternal=8
+THQ Process nexternal=5
+THQ Process nexternal=5
+THQ Process nexternal=5
+THQ Process nexternal=5
+TransferFunctions verbosity=1
+/gridgroup/cms/amram/code/MEMmultilepton/data/output.root:/
+TF_nonB_00eta08_25E50
+TF_nonB_00eta08_50E80
+TF_nonB_00eta08_80E120
+TF_nonB_00eta08_120E200
+TF_nonB_00eta08_200E300
+TF_nonB_00eta08_EGT300
+TF_nonB_08eta16_25E50
+TF_nonB_08eta16_50E80
+TF_nonB_08eta16_80E120
+TF_nonB_08eta16_120E200
+TF_nonB_08eta16_200E300
+TF_nonB_08eta16_EGT300
+TF_nonB_16eta24_25E50
+TF_nonB_16eta24_50E80
+TF_nonB_16eta24_80E120
+TF_nonB_16eta24_120E200
+TF_nonB_16eta24_200E300
+TF_nonB_16eta24_EGT300
+Before loading minimizers
+End of InitializeIntegrator
+Opening input tree
+Creating output tree
+iEvent=0
+ReadMultilepton
+A
+lepton 11 pt=211.13 eta=0.65676 phi=0.299692 E=258.324
+lepton -11 pt=41.1325 eta=0.242577 phi=-0.605006 E=42.3487
+lepton -11 pt=23.2362 eta=1.42634 phi=-0.628157 E=51.1618
+lepton 11 pt=22.0333 eta=-1.264 phi=1.53904 E=42.1064
+B
+bjet 5 csv=4.20646e-36 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+bjet 5 csv=0 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+C
+OK
+1927
+1930
+1933
+1936
+1939
+D
+E
+MultiLepton loaded
+A
+A1
+A2
+B
+crack
+
+
+------------ EVENT -----------
+--- Loose Tagged Jets : 
+1: pT = 114.601 / eta = -0.709714 / phi = -2.86133 / csv = 4.20646e-36
+2: pT = 29.7906 / eta = 0.792295 / phi = 0.792295 / csv = 0
+--- HighestPt Jets : 
+1: pT = 0 / eta = 0 / phi = 0 / csv = 2.36987e+09
+2: pT = 0 / eta = 0 / phi = 0/ csv = 0
+--- Leptons : 
+1: pT = 211.13 / eta = 0.65676 / phi = 0.299692 Id=11
+2: pT = 41.1325 / eta = 0.242577 / phi = -0.605006 Id=-11
+3: pT = 23.2362 / eta = 1.42634 / phi = -0.628157 Id=-11
+--- mET : 
+mET Px=-124.05 Py=22.0522
+sumET=-nan
+--- Lepton categories : 
+catJets=5
+mc_ttZhypAllowed=1
+Start looping on hypotheses
+Hyp : 0is TTLL
+Before ParticleSelector: Nleptons=4, Category: 5
+alljet 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+alljet 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetHighestPt 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+jetHighestPt 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetClosestMw 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+jetClosestMw 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetLowestMjj 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+jetLowestMjj 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetHighestEta 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetHighestEta 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+After ParticleSelector: Nleptons=4, Category: -1
+571
+InitializeHyp 15 (TTLL), nPoints=10000 doMinimization=0, JetChoice=Mixed, nsyst=0
+Process 15 (TTLL) xs=0.00389464
+SetIntegrationMode 15
+575
+1
+Start looping
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=11
+ Lepton3Id=-11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+HiggsFullyLep
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTLL Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.1
+KIN from MEM Hyp TTLL Vegas Ncall=10000 max=0 Time(s)=0.1
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=11
+ Lepton3Id=-11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+HiggsFullyLep
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTLL Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.1
+KIN from MEM Hyp TTLL Vegas Ncall=10000 max=0 Time(s)=0.1
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=11
+ Lepton3Id=-11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+HiggsFullyLep
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTLL Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTLL Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=11
+ Lepton3Id=-11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+HiggsFullyLep
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTLL Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTLL Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+578
+Hyp : 1is TTHsl
+Before ParticleSelector: Nleptons=4, Category: 5
+alljet 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+alljet 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetHighestPt 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+jetHighestPt 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetClosestMw 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+jetClosestMw 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetLowestMjj 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+jetLowestMjj 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetHighestEta 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetHighestEta 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+After ParticleSelector: Nleptons=4, Category: -1
+571
+InitializeHyp 16 (TTHsl), nPoints=100000 doMinimization=0, JetChoice=Mixed, nsyst=0
+Process 16 (TTHsl) xs=9.99571e-05
+SetIntegrationMode 16
+575
+0
+578
+Hyp : 2is TTHfl
+Before ParticleSelector: Nleptons=4, Category: 5
+alljet 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+alljet 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetHighestPt 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+jetHighestPt 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetClosestMw 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+jetClosestMw 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetLowestMjj 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+jetLowestMjj 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetHighestEta 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetHighestEta 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+After ParticleSelector: Nleptons=4, Category: -1
+571
+InitializeHyp 14 (TTHfl), nPoints=100000 doMinimization=0, JetChoice=Mixed, nsyst=0
+Process 14 (TTHfl) xs=9.99571e-05
+SetIntegrationMode 14
+575
+1
+Start looping
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=11
+ Lepton3Id=-11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+HiggsFullyLep
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Var 6 xL=0 xU=500
+Var 7 xL=0 xU=3.14159
+Var 8 xL=0 xU=6.28319
+Var 9 xL=0 xU=6.28319
+Var 10 xL=0 xU=125
+Iteration 0, non-zero 0
+Iteration 100000, non-zero 0
+Iteration 200000, non-zero 0
+Iteration 300000, non-zero 0
+Iteration 400000, non-zero 0
+MEM Hyp TTHfl Vegas Ncall=100000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=1.15
+KIN from MEM Hyp TTHfl Vegas Ncall=100000 max=0 Time(s)=1.15
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=11
+ Lepton3Id=-11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+HiggsFullyLep
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Var 6 xL=0 xU=500
+Var 7 xL=0 xU=3.14159
+Var 8 xL=0 xU=6.28319
+Var 9 xL=0 xU=6.28319
+Var 10 xL=0 xU=125
+Iteration 0, non-zero 0
+Iteration 100000, non-zero 0
+Iteration 200000, non-zero 0
+Iteration 300000, non-zero 0
+Iteration 400000, non-zero 0
+MEM Hyp TTHfl Vegas Ncall=100000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=1.12
+KIN from MEM Hyp TTHfl Vegas Ncall=100000 max=0 Time(s)=1.12
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=11
+ Lepton3Id=-11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+HiggsFullyLep
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Var 6 xL=0 xU=500
+Var 7 xL=0 xU=3.14159
+Var 8 xL=0 xU=6.28319
+Var 9 xL=0 xU=6.28319
+Var 10 xL=0 xU=125
+Iteration 0, non-zero 0
+Iteration 100000, non-zero 0
+Iteration 200000, non-zero 0
+Iteration 300000, non-zero 0
+Iteration 400000, non-zero 0
+MEM Hyp TTHfl Vegas Ncall=100000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.45
+KIN from MEM Hyp TTHfl Vegas Ncall=100000 max=0 Time(s)=0.45
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=11
+ Lepton3Id=-11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+HiggsFullyLep
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Var 6 xL=0 xU=500
+Var 7 xL=0 xU=3.14159
+Var 8 xL=0 xU=6.28319
+Var 9 xL=0 xU=6.28319
+Var 10 xL=0 xU=125
+Iteration 0, non-zero 0
+Iteration 100000, non-zero 0
+Iteration 200000, non-zero 0
+Iteration 300000, non-zero 0
+Iteration 400000, non-zero 0
+MEM Hyp TTHfl Vegas Ncall=100000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.45
+KIN from MEM Hyp TTHfl Vegas Ncall=100000 max=0 Time(s)=0.45
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+578
+Hyp : 3is TTW
+Before ParticleSelector: Nleptons=4, Category: 5
+alljet 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+alljet 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetHighestPt 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+jetHighestPt 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetClosestMw 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+jetClosestMw 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetLowestMjj 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+jetLowestMjj 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetHighestEta 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetHighestEta 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+After ParticleSelector: Nleptons=4, Category: -1
+571
+InitializeHyp 17 (TTW), nPoints=30000 doMinimization=0, JetChoice=Mixed, nsyst=0
+Process 17 (TTW) xs=0.00312221
+SetIntegrationMode 17
+575
+0
+578
+Hyp : 4is TTbarfl
+Before ParticleSelector: Nleptons=4, Category: 5
+alljet 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+alljet 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetHighestPt 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+jetHighestPt 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetClosestMw 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+jetClosestMw 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetLowestMjj 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+jetLowestMjj 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetHighestEta 5 pt=29.7906 eta=0.792295 phi=1.86279 E=39.6403
+jetHighestEta 5 pt=114.601 eta=-0.709714 phi=-2.86133 E=144.694
+After ParticleSelector: Nleptons=4, Category: -1
+571
+InitializeHyp 19 (TTbarfl), nPoints=10000 doMinimization=0, JetChoice=Mixed, nsyst=0
+Process 19 (TTbarfl) xs=63.1261
+SetIntegrationMode 19
+575
+1
+Start looping
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.04
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.04
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
+MEM Hyp TTbarfl Vegas Ncall=10000 Cross section (pb) : 0 +/- 0 chi2/ndof=0 Time(s)=0.03
+KIN from MEM Hyp TTbarfl Vegas Ncall=10000 max=0 Time(s)=0.03
+Setting result weight to almost 0:0
+After norm, Cross section (pb) : 0 +/- 0
+ Lepton0Id=11
+ Lepton1Id=-11
+ Lepton2Id=-11
+ Lepton3Id=11
+TopLep numTop=0 numTopLep=0 isBmissing=0
+TopLep numTop=1 numTopLep=1 isBmissing=0
+Var 0 xL=28.9389 xU=723.472
+Var 1 xL=0 xU=6.28319
+Var 2 xL=-1.54534 xU=1.56377
+Var 3 xL=7.92806 xU=198.201
+Var 4 xL=0 xU=6.28319
+Var 5 xL=-1.54534 xU=1.56377
+Iteration 0, non-zero 0
