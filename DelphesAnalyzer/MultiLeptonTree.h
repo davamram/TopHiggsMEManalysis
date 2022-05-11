@@ -21,7 +21,7 @@ class MultiLeptonTree {
   void fillOutputTree();
   void FillJetInfoOutputTree(int* tree_Id, int id, TLorentzVector* tree_P4, Jet* jet);
   //void FillJetInfoOutputTree(int*, int, TLorentzVector*, TLorentzVector, float*, float, float*, float*, float, float*, float*, float, float, float);
- 
+
   TTree* tOutput;
 
 	Float_t weight;
@@ -30,6 +30,7 @@ class MultiLeptonTree {
 
 	Int_t mc_ttZhypAllowed;
 	Int_t catJets;
+  Int_t nJets;
 
 	Int_t is_2lss_TTH_SR, is_3l_TTH_SR, is_3l_TTZ_CR;
 
@@ -52,13 +53,13 @@ class MultiLeptonTree {
         Int_t           multilepton_Bjet1_Id_Matched,       multilepton_Bjet2_Id_Matched;
         TLorentzVector  multilepton_Bjet1_P4_Matched,       multilepton_Bjet2_P4_Matched;
 
-        Int_t multilepton_JetHighestPt1_Id, multilepton_JetHighestPt2_Id, multilepton_JetClosestMw1_Id, multilepton_JetClosestMw2_Id, multilepton_JetLowestMjj1_Id, multilepton_JetLowestMjj2_Id;
-        TLorentzVector multilepton_JetHighestPt1_P4, multilepton_JetHighestPt2_P4, multilepton_JetClosestMw1_P4, multilepton_JetClosestMw2_P4, multilepton_JetLowestMjj1_P4, multilepton_JetLowestMjj2_P4;
-        Float_t multilepton_JetHighestPt1_CSV, multilepton_JetHighestPt2_CSV, multilepton_JetClosestMw1_CSV, multilepton_JetClosestMw2_CSV, multilepton_JetLowestMjj1_CSV, multilepton_JetLowestMjj2_CSV;
-        Float_t multilepton_JetHighestPt1_JEC_Up, multilepton_JetHighestPt2_JEC_Up, multilepton_JetClosestMw1_JEC_Up, multilepton_JetClosestMw2_JEC_Up, multilepton_JetLowestMjj1_JEC_Up, multilepton_JetLowestMjj2_JEC_Up;
-        Float_t multilepton_JetHighestPt1_JEC_Down, multilepton_JetHighestPt2_JEC_Down, multilepton_JetClosestMw1_JEC_Down, multilepton_JetClosestMw2_JEC_Down, multilepton_JetLowestMjj1_JEC_Down, multilepton_JetLowestMjj2_JEC_Down;
-        Float_t multilepton_JetHighestPt1_JER_Up, multilepton_JetHighestPt2_JER_Up, multilepton_JetClosestMw1_JER_Up, multilepton_JetClosestMw2_JER_Up, multilepton_JetLowestMjj1_JER_Up, multilepton_JetLowestMjj2_JER_Up;
-        Float_t multilepton_JetHighestPt1_JER_Down, multilepton_JetHighestPt2_JER_Down, multilepton_JetClosestMw1_JER_Down, multilepton_JetClosestMw2_JER_Down, multilepton_JetLowestMjj1_JER_Down, multilepton_JetLowestMjj2_JER_Down;
+        Int_t multilepton_JetHighestPt1_Id,multilepton_JetHighestEta1_Id, multilepton_JetHighestEta2_Id,multilepton_JetHighestPt2_Id, multilepton_JetClosestMw1_Id, multilepton_JetClosestMw2_Id, multilepton_JetLowestMjj1_Id, multilepton_JetLowestMjj2_Id;
+        TLorentzVector multilepton_JetHighestPt1_P4, multilepton_JetHighestEta1_P4, multilepton_JetHighestEta2_P4, multilepton_JetHighestPt2_P4, multilepton_JetClosestMw1_P4, multilepton_JetClosestMw2_P4, multilepton_JetLowestMjj1_P4, multilepton_JetLowestMjj2_P4;
+        Float_t multilepton_JetHighestPt1_CSV, multilepton_JetHighestEta1_CSV, multilepton_JetHighestEta2_CSV, multilepton_JetHighestPt2_CSV, multilepton_JetClosestMw1_CSV, multilepton_JetClosestMw2_CSV, multilepton_JetLowestMjj1_CSV, multilepton_JetLowestMjj2_CSV;
+        Float_t multilepton_JetHighestPt1_JEC_Up, multilepton_JetHighestEta1_JEC_Up, multilepton_JetHighestEta2_JEC_Up, multilepton_JetHighestPt2_JEC_Up, multilepton_JetClosestMw1_JEC_Up, multilepton_JetClosestMw2_JEC_Up, multilepton_JetLowestMjj1_JEC_Up, multilepton_JetLowestMjj2_JEC_Up;
+        Float_t multilepton_JetHighestPt1_JEC_Down,multilepton_JetHighestEta1_JEC_Down, multilepton_JetHighestEta2_JEC_Down, multilepton_JetHighestPt2_JEC_Down, multilepton_JetClosestMw1_JEC_Down, multilepton_JetClosestMw2_JEC_Down, multilepton_JetLowestMjj1_JEC_Down, multilepton_JetLowestMjj2_JEC_Down;
+        Float_t multilepton_JetHighestPt1_JER_Up, multilepton_JetHighestEta1_JER_Up,multilepton_JetHighestEta2_JER_Up, multilepton_JetHighestPt2_JER_Up, multilepton_JetClosestMw1_JER_Up, multilepton_JetClosestMw2_JER_Up, multilepton_JetLowestMjj1_JER_Up, multilepton_JetLowestMjj2_JER_Up;
+        Float_t multilepton_JetHighestPt1_JER_Down, multilepton_JetHighestEta1_JER_Down, multilepton_JetHighestEta2_JER_Down, multilepton_JetHighestPt2_JER_Down, multilepton_JetClosestMw1_JER_Down, multilepton_JetClosestMw2_JER_Down, multilepton_JetLowestMjj1_JER_Down, multilepton_JetLowestMjj2_JER_Down;
 
         Float_t         multilepton_Jet1_DeltaR_Matched,   multilepton_Jet2_DeltaR_Matched;
         Int_t           multilepton_Jet1_Label_Matched,    multilepton_Jet2_Label_Matched;
@@ -113,11 +114,13 @@ void MultiLeptonTree::initializeOutputTree(){
 
     tOutput = new TTree("Tree", "Tree");
     tOutput->Branch("weight",&weight,"weight/F");
-    tOutput->Branch("mc_weight",&mc_weight,"mc_weight/F"); 
+    tOutput->Branch("mc_weight",&mc_weight,"mc_weight/F");
     tOutput->Branch("PV_weight",&weight_PV,"PV_weight/F");
 
     tOutput->Branch("mc_ttZhypAllowed",&mc_ttZhypAllowed,"mc_ttZhypAllowed/I");
     tOutput->Branch("catJets",&catJets,"catJets/I");
+
+    tOutput->Branch("nJets", &nJets, "nJets/I");
 
     tOutput->Branch("is_2lss_TTH_SR",&is_2lss_TTH_SR,"is_2lss_TTH_SR/B");
     tOutput->Branch("is_3l_TTH_SR",&is_3l_TTH_SR,"is_3l_TTH_SR/B");
@@ -195,6 +198,22 @@ void MultiLeptonTree::initializeOutputTree(){
     tOutput->Branch("multilepton_JetHighestPt2_JEC_Down",&multilepton_JetHighestPt2_JEC_Down,"multilepton_JetHighestPt2_JEC_Down/F");
     tOutput->Branch("multilepton_JetHighestPt2_JER_Up",&multilepton_JetHighestPt2_JER_Up,"multilepton_JetHighestPt2_JER_Up/F");
     tOutput->Branch("multilepton_JetHighestPt2_JER_Down",&multilepton_JetHighestPt2_JER_Down,"multilepton_JetHighestPt2_JER_Down/F");
+
+    tOutput->Branch("multilepton_JetHighestEta1_Id",&multilepton_JetHighestEta1_Id,"multilepton_JetHighestEta1_Id/I");
+    tOutput->Branch("multilepton_JetHighestEta1_P4","TLorentzVector",&multilepton_JetHighestEta1_P4);
+    tOutput->Branch("multilepton_JetHighestEta1_CSV",&multilepton_JetHighestEta1_CSV,"multilepton_JetHighestEta1_CSV/F");
+    tOutput->Branch("multilepton_JetHighestEta1_JEC_Up",&multilepton_JetHighestEta1_JEC_Up,"multilepton_JetHighestEta1_JEC_Up/F");
+    tOutput->Branch("multilepton_JetHighestEta1_JEC_Down",&multilepton_JetHighestEta1_JEC_Down,"multilepton_JetHighestEta1_JEC_Down/F");
+    tOutput->Branch("multilepton_JetHighestEta1_JER_Up",&multilepton_JetHighestEta1_JER_Up,"multilepton_JetHighestEta1_JER_Up/F");
+    tOutput->Branch("multilepton_JetHighestEta1_JER_Down",&multilepton_JetHighestEta1_JER_Down,"multilepton_JetHighestEta1_JER_Down/F");
+
+    tOutput->Branch("multilepton_JetHighestEta2_Id",&multilepton_JetHighestEta2_Id,"multilepton_JetHighestEta2_Id/I");
+    tOutput->Branch("multilepton_JetHighestEta2_P4","TLorentzVector",&multilepton_JetHighestEta2_P4);
+    tOutput->Branch("multilepton_JetHighestEta2_CSV",&multilepton_JetHighestEta2_CSV,"multilepton_JetHighestEta2_CSV/F");
+    tOutput->Branch("multilepton_JetHighestEta2_JEC_Up",&multilepton_JetHighestEta2_JEC_Up,"multilepton_JetHighestEta2_JEC_Up/F");
+    tOutput->Branch("multilepton_JetHighestEta2_JEC_Down",&multilepton_JetHighestEta2_JEC_Down,"multilepton_JetHighestEta2_JEC_Down/F");
+    tOutput->Branch("multilepton_JetHighestEta2_JER_Up",&multilepton_JetHighestEta2_JER_Up,"multilepton_JetHighestEta2_JER_Up/F");
+    tOutput->Branch("multilepton_JetHighestEta2_JER_Down",&multilepton_JetHighestEta2_JER_Down,"multilepton_JetHighestEta2_JER_Down/F");
 
     tOutput->Branch("multilepton_JetClosestMw1_Id",&multilepton_JetClosestMw1_Id,"multilepton_JetClosestMw1_Id/I");
     tOutput->Branch("multilepton_JetClosestMw1_P4","TLorentzVector",&multilepton_JetClosestMw1_P4);
@@ -343,6 +362,3 @@ void MultiLeptonTree::FillJetInfoOutputTree(int* tree_Id, int id, TLorentzVector
 
 
 #endif
-
-
-

@@ -101,7 +101,7 @@ void TestExRootAnalysis()
   tree.initializeOutputTree();
 
   bool doTTZselection = true;
-  bool doTFselection = false;
+  bool doTFselection = true;
   bool storeGenLevel = true;
 
   //int NEND_bis = NEND;
@@ -446,7 +446,7 @@ void TestExRootAnalysis()
       tree.mc_ttZhypAllowed = 1;
 
       //if(pass_Zveto)       continue;
-      tree.is_3l_TTZ_CR = true;
+      tree.is_3l_TTZ_CR = false;
 
       nSelectedEventsTTZ++;
 
@@ -589,8 +589,8 @@ void TestExRootAnalysis()
 
   if (doTTZselection){
     //cout<<"is4l : "<<is4l<<" / ib1 : "<<ib1<<" / ib2 : "<<ib2<<endl;
-    if (is4l && ib1!=-1 && ib2!=-1) tree.catJets = kCat_4l_2b;
-    else if (is4l && ib1!=-1 && ib2==-1) tree.catJets = kCat_4l_1b;
+    if (is4l && ib1!=-1 && ib2!=-1 && vSelectedJets.size()==2) tree.catJets = kCat_4l_2b;
+    else if (is4l && ib1!=-1 && ib2==-1 && vSelectedJets.size()==1) tree.catJets = kCat_4l_1b;
     else tree.catJets = -1;
 
     if (tree.catJets != kCat_4l_2b && tree.catJets != kCat_4l_1b) continue;
@@ -626,6 +626,8 @@ void TestExRootAnalysis()
 
     tree.multilepton_JetHighestPt1_Id = -999;
     tree.multilepton_JetHighestPt2_Id = -999;
+    tree.multilepton_JetHighestEta1_Id = -999;
+    tree.multilepton_JetHighestEta2_Id = -999;
     tree.multilepton_JetClosestMw1_Id = -999;
     tree.multilepton_JetClosestMw2_Id = -999;
     tree.multilepton_JetLowestMjj1_Id = -999;
@@ -721,6 +723,8 @@ void TestExRootAnalysis()
 
     tree.multilepton_mET.SetPtEtaPhiE(mET->MET, 0, mET->Phi, mET->MET);
     tree.multilepton_mHT = msumET->HT;
+
+    tree.nJets=vSelectedJets.size();
 
     tree.tOutput->Fill();
 
