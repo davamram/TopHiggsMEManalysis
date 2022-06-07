@@ -26,13 +26,13 @@ class ReadFlatTree {
   ReadFlatTree();
   ~ReadFlatTree();
 
-  void InitializeDryRun(string);
+  void InitializeDryRun(string, string);
 
   bool doUpdateAllJets;
   void SetUpdateAllJets(bool);
 
   void LoadPipelineVars(string);
-  void InitializeMEMRun(string, string);
+  void InitializeMEMRun(string, string, string);
   void FillGenMultilepton(Long64_t, MultiLepton*);
   int ApplyGenSelection(Long64_t, MultiLepton*);
   void WriteMultilepton(MultiLepton*);
@@ -145,6 +145,7 @@ class ReadFlatTree {
   std::vector<double>* mc_kin_tthfl_inputvars;
   std::vector<double>* mc_kin_tthsl_inputvars;
   std::vector<double>* mc_kin_ttz_inputvars;
+  std::vector<double>* mc_kin_ttllEFT_inputvars;
   std::vector<double>* mc_kin_ttw_inputvars;
   std::vector<double>* mc_kin_ttwjj_inputvars;
   std::vector<double>* mc_kin_ttbarfl_inputvars;
@@ -156,6 +157,7 @@ class ReadFlatTree {
   std::vector<double>* mc_kinInt_tthfl_inputvars;
   std::vector<double>* mc_kinInt_tthsl_inputvars;
   std::vector<double>* mc_kinInt_ttz_inputvars;
+  std::vector<double>* mc_kinInt_ttllEFT_inputvars;
   std::vector<double>* mc_kinInt_ttw_inputvars;
   std::vector<double>* mc_kinInt_ttwjj_inputvars;
   std::vector<double>* mc_kinInt_ttbarfl_inputvars;
@@ -675,6 +677,54 @@ class ReadFlatTree {
   Float_t mc_kin_ttz_zll_Pt;
   Float_t mc_kin_ttz_zll_Zmass;
 
+  Double_t mc_mem_ttllEFT_weight;
+  Double_t mc_mem_ttllEFT_weight_JEC_up, mc_mem_ttllEFT_weight_JEC_down, mc_mem_ttllEFT_weight_JER_up, mc_mem_ttllEFT_weight_JER_down;
+  Double_t mc_mem_ttllEFT_weight_log;
+  Double_t mc_mem_ttllEFT_weight_err;
+  Float_t mc_mem_ttllEFT_weight_chi2;
+  Float_t mc_mem_ttllEFT_weight_time;
+  Double_t mc_mem_ttllEFT_weight_max;
+  Double_t mc_mem_ttllEFT_weight_avg;
+  Double_t mc_mem_ttllEFT_weight_logmean;
+  Double_t mc_kin_ttllEFT_weight_logmax;
+  Double_t mc_kin_ttllEFT_weight_logmaxint;
+  Double_t mc_mem_ttllEFT_weight_kinmax;
+  Double_t mc_mem_ttllEFT_weight_kinmaxint;
+
+  TLorentzVector mc_kin_ttllEFT_tophad_P4;
+  TLorentzVector mc_kin_ttllEFT_tophad_Bjet_P4;
+  TLorentzVector mc_kin_ttllEFT_tophad_W_P4;
+  TLorentzVector mc_kin_ttllEFT_tophad_Jet1_P4;
+  TLorentzVector mc_kin_ttllEFT_tophad_Jet2_P4;
+  Float_t mc_kin_ttllEFT_tophad_Pt;
+  Float_t mc_kin_ttllEFT_tophad_Wmass;
+  Float_t mc_kin_ttllEFT_tophad_Benergy;
+  Float_t mc_kin_ttllEFT_tophad_Jet1energy;
+  Float_t mc_kin_ttllEFT_tophad_Jet2energy;
+  TLorentzVector mc_kin_ttllEFT_toplep_P4;
+  TLorentzVector mc_kin_ttllEFT_toplep_Bjet_P4;
+  TLorentzVector mc_kin_ttllEFT_toplep_W_P4;
+  TLorentzVector mc_kin_ttllEFT_toplep_Lep_P4;
+  TLorentzVector mc_kin_ttllEFT_toplep_Neut_P4;
+  Float_t mc_kin_ttllEFT_toplep_Pt;
+  Float_t mc_kin_ttllEFT_toplep_Wmass;
+  Float_t mc_kin_ttllEFT_toplep_Benergy;
+  Float_t mc_kin_ttllEFT_toplep_Neutenergy;
+  TLorentzVector mc_kin_ttllEFT_toplep2_P4;
+  TLorentzVector mc_kin_ttllEFT_toplep2_Bjet_P4;
+  TLorentzVector mc_kin_ttllEFT_toplep2_W_P4;
+  TLorentzVector mc_kin_ttllEFT_toplep2_Lep_P4;
+  TLorentzVector mc_kin_ttllEFT_toplep2_Neut_P4;
+  Float_t mc_kin_ttllEFT_toplep2_Pt;
+  Float_t mc_kin_ttllEFT_toplep2_Wmass;
+  Float_t mc_kin_ttllEFT_toplep2_Benergy;
+  Float_t mc_kin_ttllEFT_toplep2_Neutenergy;
+  TLorentzVector mc_kin_ttllEFT_zll_P4;
+  TLorentzVector mc_kin_ttllEFT_zll_Lep1_P4;
+  TLorentzVector mc_kin_ttllEFT_zll_Lep2_P4;
+  Float_t mc_kin_ttllEFT_zll_Pt;
+  Float_t mc_kin_ttllEFT_zll_Zmass;
+
   Double_t mc_mem_ttw_weight;
   Double_t mc_mem_ttw_weight_JEC_up, mc_mem_ttw_weight_JEC_down, mc_mem_ttw_weight_JER_up, mc_mem_ttw_weight_JER_down;
   Double_t mc_mem_ttw_weight_log;
@@ -831,6 +881,11 @@ class ReadFlatTree {
   Double_t mc_mem_ttz_tth_likelihood_nlog;
   Double_t mc_mem_ttz_tth_likelihood_max;
   Double_t mc_mem_ttz_tth_likelihood_avg;
+
+  Double_t mc_mem_ttz_ttllEFT_likelihood;
+  Double_t mc_mem_ttz_ttllEFT_likelihood_nlog;
+  Double_t mc_mem_ttz_ttllEFT_likelihood_max;
+  Double_t mc_mem_ttz_ttllEFT_likelihood_avg;
 
   Double_t mc_mem_ttw_tth_likelihood;
   Double_t mc_mem_ttw_tth_likelihood_nlog;

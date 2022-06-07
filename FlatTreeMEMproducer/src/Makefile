@@ -15,7 +15,10 @@ TTbar_MADINCDIR=${MADDIR}/PROC_SA_CPP_sm_DECAY_ggtt/src
 TLLQ_MADINCDIR=${MADDIR}/PROC_SA_CPP_sm_no_b_mass_DECAY_pptllq/src
 WZJJ_MADINCDIR=${MADDIR}/PROC_SA_CPP_sm_DECAY_gqlnullgq/src
 THQ_MADINCDIR=${MADDIR}/PROC_SA_CPP_sm_no_b_mass_DECAY_ppthq/src
-MADINCDIR = -I$(TTH_MADINCDIR) -I$(THAD_MADINCDIR) -I$(ATHAD_MADINCDIR) -I$(TLEP_MADINCDIR) -I$(H2L2NU_MADINCDIR) -I$(TTLL_MADINCDIR) -I$(TTWP_MADINCDIR) -I$(TTWM_MADINCDIR) -I${TTWPJJ_MADINCDIR} -I${TTWMJJ_MADINCDIR} -I${TTbar_MADINCDIR} -I${TLLQ_MADINCDIR} -I${WZJJ_MADINCDIR} -I${THQ_MADINCDIR}
+TTLL_EFT_MADINCDIR=${MADDIR}/PROC_SA_CPP_dim6top_LO_UFO_all_DECAY_ggttll/src
+TTLL_EFT_MADLIBDIR=${MADDIR}/PROC_SA_CPP_dim6top_LO_UFO_all_DECAY_ggttll/lib
+TTLL_EFT_MADMODELLIB=model_dim6top_LO_UFO_all_ggttll
+MADINCDIR = -I$(TTH_MADINCDIR) -I$(THAD_MADINCDIR) -I$(ATHAD_MADINCDIR) -I$(TLEP_MADINCDIR) -I$(H2L2NU_MADINCDIR) -I$(TTLL_MADINCDIR) -I$(TTWP_MADINCDIR) -I$(TTWM_MADINCDIR) -I${TTWPJJ_MADINCDIR} -I${TTWMJJ_MADINCDIR} -I${TTbar_MADINCDIR} -I${TLLQ_MADINCDIR} -I${WZJJ_MADINCDIR} -I${THQ_MADINCDIR} -I${TTLL_EFT_MADINCDIR}
 #------------------------------------------------------------------------------
 # ROOT definitions
 ROOTCFLAGS    = $(shell root-config --cflags)
@@ -30,7 +33,7 @@ LHAPDFLIB=-L${LHAPDF}/lib -lLHAPDF
 CXX = g++
 CXXFLAGS = -g -O3 -fPIC -Wall -Wno-deprecated
 CXXFLAGS     += $(ROOTCFLAGS) ${LHAPDFINCDIR} ${MADINCDIR}
-LIBS         = ${ROOTGLIBS} ${ROOTLIBS} ${LHAPDFLIB} -L../../../MEMmultilepton -lMEMmultilepton
+LIBS         = ${ROOTGLIBS} ${ROOTLIBS} ${LHAPDFLIB} -L../../../MEMmultilepton -lMEMmultilepton -L${TTLL_EFT_MADLIBDIR} -l${TTLL_EFT_MADMODELLIB}
 #------------------------------------------------------------------------------
 # Compilation
 
@@ -42,15 +45,13 @@ clean:
 
 objects= runMEM.o ReadFlatTree.o
 
-../test/runMEM: $(objects) 
+../test/runMEM: $(objects)
 	$(CXX) -o ../test/runMEM $(objects) ${LIBS}  $(CXXFLAGS)
 
-runMEM.o: runMEM.cpp 
+runMEM.o: runMEM.cpp
 	$(CXX) ${LIBS} ${CXXFLAGS} -c runMEM.cpp
 
 ReadFlatTree.o: ReadFlatTree.cpp
 	$(CXX) ${LIBS} ${CXXFLAGS} -c ReadFlatTree.cpp
 #ConfigParser.o: src/ConfigParser.cpp
 #        $(CXX) ${LIBS} ${CXXFLAGS} -c src/ConfigParser.cpp
-
-
