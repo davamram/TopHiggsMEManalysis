@@ -326,6 +326,7 @@ void ReadFlatTree::InitializeMEMRun(string InputFileName, string ListOfVars, str
   mc_kin_tthsl_inputvars = new std::vector<double>;
   mc_kin_ttz_inputvars = new std::vector<double>;
   mc_kin_ttllEFT_inputvars = new std::vector<double>;
+  mc_kin_ttllEFT_only_inputvars = new std::vector<double>;
   mc_kin_ttw_inputvars = new std::vector<double>;
   mc_kin_ttwjj_inputvars = new std::vector<double>;
   mc_kin_ttbarfl_inputvars = new std::vector<double>;
@@ -338,6 +339,7 @@ void ReadFlatTree::InitializeMEMRun(string InputFileName, string ListOfVars, str
   mc_kinInt_tthsl_inputvars = new std::vector<double>;
   mc_kinInt_ttz_inputvars = new std::vector<double>;
   mc_kinInt_ttllEFT_inputvars = new std::vector<double>;
+  mc_kinInt_ttllEFT_only_inputvars = new std::vector<double>;
   mc_kinInt_ttw_inputvars = new std::vector<double>;
   mc_kinInt_ttwjj_inputvars = new std::vector<double>;
   mc_kinInt_ttbarfl_inputvars = new std::vector<double>;
@@ -1135,6 +1137,57 @@ void ReadFlatTree::InitializeMEMRun(string InputFileName, string ListOfVars, str
   tOutput->Branch("mc_kin_ttllEFT_zll_Pt",&mc_kin_ttllEFT_zll_Pt,"mc_kin_ttllEFT_zll_Pt/F");
   tOutput->Branch("mc_kin_ttllEFT_zll_Zmass",&mc_kin_ttllEFT_zll_Zmass,"mc_kin_ttllEFT_zll_Zmass/F");
 
+  tOutput->Branch("mc_mem_ttllEFT_only_weight",&mc_mem_ttllEFT_only_weight,"mc_mem_ttllEFT_only_weight/D");
+  tOutput->Branch("mc_mem_ttllEFT_only_weight_JEC_up",&mc_mem_ttllEFT_only_weight_JEC_up,"mc_mem_ttllEFT_only_weight_JEC_up/D");
+  tOutput->Branch("mc_mem_ttllEFT_only_weight_JEC_down",&mc_mem_ttllEFT_only_weight_JEC_down,"mc_mem_ttllEFT_only_weight_JEC_down/D");
+  tOutput->Branch("mc_mem_ttllEFT_only_weight_JER_up",&mc_mem_ttllEFT_only_weight_JER_up,"mc_mem_ttllEFT_only_weight_JER_up/D");
+  tOutput->Branch("mc_mem_ttllEFT_only_weight_JER_down",&mc_mem_ttllEFT_only_weight_JER_down,"mc_mem_ttllEFT_only_weight_JER_down/D");
+  tOutput->Branch("mc_mem_ttllEFT_only_weight_log",&mc_mem_ttllEFT_only_weight_log,"mc_mem_ttllEFT_only_weight_log/D");
+  tOutput->Branch("mc_mem_ttllEFT_only_weight_err",&mc_mem_ttllEFT_only_weight_err,"mc_mem_ttllEFT_only_weight_err/D");
+  tOutput->Branch("mc_mem_ttllEFT_only_weight_chi2",&mc_mem_ttllEFT_only_weight_chi2,"mc_mem_ttllEFT_only_weight_chi2/F");
+  tOutput->Branch("mc_mem_ttllEFT_only_weight_time",&mc_mem_ttllEFT_only_weight_time,"mc_mem_ttllEFT_only_weight_time/F");
+  tOutput->Branch("mc_mem_ttllEFT_only_weight_max",&mc_mem_ttllEFT_only_weight_max,"mc_mem_ttllEFT_only_weight_max/D");
+  tOutput->Branch("mc_mem_ttllEFT_only_weight_avg",&mc_mem_ttllEFT_only_weight_avg,"mc_mem_ttllEFT_only_weight_avg/D");
+  tOutput->Branch("mc_mem_ttllEFT_only_weight_logmean",&mc_mem_ttllEFT_only_weight_logmean,"mc_mem_ttllEFT_only_weight_logmean/D");
+  tOutput->Branch("mc_mem_ttllEFT_only_weight_kinmax",&mc_mem_ttllEFT_only_weight_kinmax,"mc_mem_ttllEFT_only_weight_kinmax/D");
+  tOutput->Branch("mc_mem_ttllEFT_only_weight_kinmaxint",&mc_mem_ttllEFT_only_weight_kinmaxint,"mc_mem_ttllEFT_only_weight_kinmaxint/D");
+  tOutput->Branch("mc_kin_ttllEFT_only_weight_logmax",&mc_kin_ttllEFT_only_weight_logmax,"mc_kin_ttllEFT_only_weight_logmax/D");
+  tOutput->Branch("mc_kin_ttllEFT_only_weight_logmaxint",&mc_kin_ttllEFT_only_weight_logmaxint,"mc_kin_ttllEFT_only_weight_logmaxint/D");
+
+  tOutput->Branch("mc_kin_ttllEFT_only_tophad_P4","TLorentzVector",&mc_kin_ttllEFT_only_tophad_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_tophad_Bjet_P4","TLorentzVector",&mc_kin_ttllEFT_only_tophad_Bjet_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_tophad_W_P4","TLorentzVector",&mc_kin_ttllEFT_only_tophad_W_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_tophad_Jet1_P4","TLorentzVector",&mc_kin_ttllEFT_only_tophad_Jet1_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_tophad_Jet2_P4","TLorentzVector",&mc_kin_ttllEFT_only_tophad_Jet2_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_tophad_Pt",&mc_kin_ttllEFT_only_tophad_Pt,"mc_kin_ttllEFT_only_tophad_Pt/F");
+  tOutput->Branch("mc_kin_ttllEFT_only_tophad_Wmass",&mc_kin_ttllEFT_only_tophad_Wmass,"mc_kin_ttllEFT_only_tophad_Wmass/F");
+  tOutput->Branch("mc_kin_ttllEFT_only_tophad_Benergy",&mc_kin_ttllEFT_only_tophad_Benergy,"mc_kin_ttllEFT_only_tophad_Benergy/F");
+  tOutput->Branch("mc_kin_ttllEFT_only_tophad_Jet1energy",&mc_kin_ttllEFT_only_tophad_Jet1energy,"mc_kin_ttllEFT_only_tophad_Jet1energy/F");
+  tOutput->Branch("mc_kin_ttllEFT_only_tophad_Jet2energy",&mc_kin_ttllEFT_only_tophad_Jet2energy,"mc_kin_ttllEFT_only_tophad_Jet2energy/F");
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep_P4","TLorentzVector",&mc_kin_ttllEFT_only_toplep_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep_Bjet_P4","TLorentzVector",&mc_kin_ttllEFT_only_toplep_Bjet_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep_W_P4","TLorentzVector",&mc_kin_ttllEFT_only_toplep_W_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep_Lep_P4","TLorentzVector",&mc_kin_ttllEFT_only_toplep_Lep_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep_Neut_P4","TLorentzVector",&mc_kin_ttllEFT_only_toplep_Neut_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep_Pt",&mc_kin_ttllEFT_only_toplep_Pt,"mc_kin_ttllEFT_only_toplep_Pt/F");
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep_Wmass",&mc_kin_ttllEFT_only_toplep_Wmass,"mc_kin_ttllEFT_only_toplep_Wmass/F");
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep_Benergy",&mc_kin_ttllEFT_only_toplep_Benergy,"mc_kin_ttllEFT_only_toplep_Benergy/F");
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep_Neutenergy",&mc_kin_ttllEFT_only_toplep_Neutenergy,"mc_kin_ttllEFT_only_toplep_Neutenergy/F");
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep2_P4","TLorentzVector",&mc_kin_ttllEFT_only_toplep2_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep2_Bjet_P4","TLorentzVector",&mc_kin_ttllEFT_only_toplep2_Bjet_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep2_W_P4","TLorentzVector",&mc_kin_ttllEFT_only_toplep2_W_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep2_Lep_P4","TLorentzVector",&mc_kin_ttllEFT_only_toplep2_Lep_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep2_Neut_P4","TLorentzVector",&mc_kin_ttllEFT_only_toplep2_Neut_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep2_Pt",&mc_kin_ttllEFT_only_toplep2_Pt,"mc_kin_ttllEFT_only_toplep2_Pt/F");
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep2_Wmass",&mc_kin_ttllEFT_only_toplep2_Wmass,"mc_kin_ttllEFT_only_toplep2_Wmass/F");
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep2_Benergy",&mc_kin_ttllEFT_only_toplep2_Benergy,"mc_kin_ttllEFT_only_toplep2_Benergy/F");
+  tOutput->Branch("mc_kin_ttllEFT_only_toplep2_Neutenergy",&mc_kin_ttllEFT_only_toplep2_Neutenergy,"mc_kin_ttllEFT_only_toplep2_Neutenergy/F");
+  tOutput->Branch("mc_kin_ttllEFT_only_zll_P4","TLorentzVector",&mc_kin_ttllEFT_only_zll_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_zll_Lep1_P4","TLorentzVector",&mc_kin_ttllEFT_only_zll_Lep1_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_zll_Lep2_P4","TLorentzVector",&mc_kin_ttllEFT_only_zll_Lep2_P4);
+  tOutput->Branch("mc_kin_ttllEFT_only_zll_Pt",&mc_kin_ttllEFT_only_zll_Pt,"mc_kin_ttllEFT_only_zll_Pt/F");
+  tOutput->Branch("mc_kin_ttllEFT_only_zll_Zmass",&mc_kin_ttllEFT_only_zll_Zmass,"mc_kin_ttllEFT_only_zll_Zmass/F");
+
   tOutput->Branch("mc_mem_ttw_weight",&mc_mem_ttw_weight,"mc_mem_ttw_weight/D");
   tOutput->Branch("mc_mem_ttw_weight_JEC_up",&mc_mem_ttw_weight_JEC_up,"mc_mem_ttw_weight_JEC_up/D");
   tOutput->Branch("mc_mem_ttw_weight_JEC_down",&mc_mem_ttw_weight_JEC_down,"mc_mem_ttw_weight_JEC_down/D");
@@ -1317,6 +1370,11 @@ void ReadFlatTree::InitializeMEMRun(string InputFileName, string ListOfVars, str
   tOutput->Branch("mc_mem_ttz_ttllEFT_likelihood_max",&mc_mem_ttz_ttllEFT_likelihood_max,"mc_mem_ttz_ttllEFT_likelihood_max/D");
   tOutput->Branch("mc_mem_ttz_ttllEFT_likelihood_avg",&mc_mem_ttz_ttllEFT_likelihood_avg,"mc_mem_ttz_ttllEFT_likelihood_avg/D");
 
+  tOutput->Branch("mc_mem_ttz_ttllEFT_only_likelihood",&mc_mem_ttz_ttllEFT_only_likelihood,"mc_mem_ttz_ttllEFT_only_likelihood/D");
+  tOutput->Branch("mc_mem_ttz_ttllEFT_only_likelihood_nlog",&mc_mem_ttz_ttllEFT_only_likelihood_nlog,"mc_mem_ttz_ttllEFT_only_likelihood_nlog/D");
+  tOutput->Branch("mc_mem_ttz_ttllEFT_only_likelihood_max",&mc_mem_ttz_ttllEFT_only_likelihood_max,"mc_mem_ttz_ttllEFT_only_likelihood_max/D");
+  tOutput->Branch("mc_mem_ttz_ttllEFT_only_likelihood_avg",&mc_mem_ttz_ttllEFT_only_likelihood_avg,"mc_mem_ttz_ttllEFT_only_likelihood_avg/D");
+
   tOutput->Branch("mc_mem_ttw_tth_likelihood",&mc_mem_ttw_tth_likelihood,"mc_mem_ttw_tth_likelihood/D");
   tOutput->Branch("mc_mem_ttw_tth_likelihood_nlog",&mc_mem_ttw_tth_likelihood_nlog,"mc_mem_ttw_tth_likelihood_nlog/D");
   tOutput->Branch("mc_mem_ttw_tth_likelihood_max",&mc_mem_ttw_tth_likelihood_max,"mc_mem_ttw_tth_likelihood_max/D");
@@ -1456,6 +1514,7 @@ void ReadFlatTree::InitializeMEMRun(string InputFileName, string ListOfVars, str
   tOutput->Branch("mc_kin_tthsl_inputvars","std::vector<double>",&mc_kin_tthsl_inputvars);
   tOutput->Branch("mc_kin_ttz_inputvars","std::vector<double>",&mc_kin_ttz_inputvars);
   tOutput->Branch("mc_kin_ttllEFT_inputvars","std::vector<double>",&mc_kin_ttllEFT_inputvars);
+  tOutput->Branch("mc_kin_ttllEFT_only_inputvars","std::vector<double>",&mc_kin_ttllEFT_only_inputvars);
   tOutput->Branch("mc_kin_ttw_inputvars","std::vector<double>",&mc_kin_ttw_inputvars);
   tOutput->Branch("mc_kin_ttwjj_inputvars","std::vector<double>",&mc_kin_ttwjj_inputvars);
   tOutput->Branch("mc_kin_ttbarfl_inputvars","std::vector<double>",&mc_kin_ttbarfl_inputvars);
@@ -1468,6 +1527,7 @@ void ReadFlatTree::InitializeMEMRun(string InputFileName, string ListOfVars, str
   tOutput->Branch("mc_kinInt_tthsl_inputvars","std::vector<double>",&mc_kinInt_tthsl_inputvars);
   tOutput->Branch("mc_kinInt_ttz_inputvars","std::vector<double>",&mc_kinInt_ttz_inputvars);
   tOutput->Branch("mc_kinInt_ttllEFT_inputvars","std::vector<double>",&mc_kinInt_ttllEFT_inputvars);
+  tOutput->Branch("mc_kinInt_ttllEFT_only_inputvars","std::vector<double>",&mc_kinInt_ttllEFT_only_inputvars);
   tOutput->Branch("mc_kinInt_ttw_inputvars","std::vector<double>",&mc_kinInt_ttw_inputvars);
   tOutput->Branch("mc_kinInt_ttwjj_inputvars","std::vector<double>",&mc_kinInt_ttwjj_inputvars);
   tOutput->Branch("mc_kinInt_ttbarfl_inputvars","std::vector<double>",&mc_kinInt_ttbarfl_inputvars);
